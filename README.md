@@ -17,7 +17,7 @@
 [![Three.js](https://img.shields.io/badge/Three.js-0.186.1-black?style=flat-square&logo=three.js&logoColor=white)](https://threejs.org/)
 [![Bun](https://img.shields.io/badge/Bun-1.3.14-F472B6?style=flat-square&logo=bun&logoColor=black)](https://bun.sh/)
 [![Tests](https://img.shields.io/badge/Tests-10%20Passed-brightgreen?style=flat-square&logo=vitest&logoColor=white)](https://bun.sh/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![License: GNU AGPLv3](https://img.shields.io/badge/License-GNU_AGPLv3-blue?style=flat-square)](LICENSE)
 
 <br/>
 
@@ -471,7 +471,7 @@ React 19, TypeScript, Angular 17, Vite 8, Tailwind CSS v4, Three.js (WebGL), Web
 ├── CONTRIBUTING.md                  # Engineering and contribution standards
 ├── bun.lock                         # Deterministic Bun dependency lockfile
 ├── index.html                       # HTML5 entry point with viewport and typography
-├── LICENSE                          # MIT open-source license
+├── LICENSE                          # GNU Affero General Public License v3.0 (AGPL-3.0)
 ├── metadata.json                    # Application metadata definition
 ├── package.json                     # NPM dependencies, scripts, and runtime engines
 ├── public/                          # Static production assets
@@ -612,9 +612,17 @@ Cairo, Egypt
 
 ## License and Terms
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for complete details.
+This project is licensed under the **GNU Affero General Public License v3.0 (GNU AGPL-3.0)** - see the [LICENSE](LICENSE) file for complete legal terms.
+
+### Copyleft and Cloud Reciprocity Protection
+GNU AGPLv3 is the strongest open-source copyleft license, establishing:
+- **Mandatory Network Reciprocity**: Any organization running modified or derivative versions of this software over a network or cloud infrastructure (SaaS) must provide complete corresponding source code to all network users.
+- **Derivative Reciprocity**: Modifications cannot be closed-sourced, repackaged under proprietary terms, or locked into vendor silos.
+- **Patent Retaliation Protection**: Comprehensive bilateral patent grant that defends against patent assertion.
+- **Attribution Preservation**: Strict copyright and authorship protection for Ahmed Abo Bakr across all forks and distributions.
 
 ```
-Copyright (c) 2026 Ahmed Abo Bakr
+Copyright (C) 2026 Ahmed Abo Bakr
+Licensed under the GNU Affero General Public License v3.0 (AGPL-3.0).
 All trademarks, logos, and brand names are the property of their respective owners.
 ```
