@@ -76,10 +76,10 @@ export const ArticlesSection: React.FC = () => {
         {selectedArticle && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
             <div
-              className="fixed inset-0 bg-transparent"
+              className="fixed inset-0 bg-black/85 backdrop-blur-md"
               onClick={() => setSelectedArticle(null)}
             />
-            <div className="relative w-full max-w-2xl bg-zinc-950/85 text-white rounded-3xl p-6 sm:p-8 border border-white/20 shadow-[0_24px_80px_rgba(0,0,0,0.65)] overflow-y-auto max-h-[85vh] z-10 animate-in fade-in zoom-in-95 duration-200 liquid-glass">
+            <div className="relative w-full max-w-2xl bg-zinc-950/98 text-white rounded-3xl p-6 sm:p-8 border border-white/20 shadow-[0_30px_90px_rgba(0,0,0,0.9)] overflow-y-auto max-h-[85vh] z-10 animate-in fade-in zoom-in-95 duration-200 liquid-glass-modal">
               <div className="flex items-start justify-between gap-4 pb-4 border-b border-white/10">
                 <div>
                   <div className="flex items-center gap-2 text-xs font-mono text-zinc-400 mb-1">

@@ -15,6 +15,8 @@ import { Footer } from './components/Footer';
 import { AccountControlsModal } from './components/AccountControlsModal';
 import { ResumeModal } from './components/ResumeModal';
 import { NevaiVibeModal } from './components/NevaiVibeModal';
+import { FeaturesModal } from './components/FeaturesModal';
+import { CommandPalette } from './components/CommandPalette';
 import { vibeAudio, VIBE_SOUNDS, VIBE_PRESETS, VibeSoundItem } from './utils/vibeAudioEngine';
 
 export default function App() {
@@ -36,6 +38,8 @@ export default function App() {
   const [isControlsOpen, setIsControlsOpen] = useState(false);
   const [isResumeOpen, setIsResumeOpen] = useState(false);
   const [isVibeOpen, setIsVibeOpen] = useState(false);
+  const [isFeaturesOpen, setIsFeaturesOpen] = useState(false);
+  const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('hero');
 
   // Continuous Nevai Vibe Audio State (Never stops on modal close or navigation)
@@ -96,6 +100,18 @@ export default function App() {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Global ⌘K or Ctrl+K shortcut to open Command Palette
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+        e.preventDefault();
+        setIsCommandPaletteOpen((prev) => !prev);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
   const handleToggleTheme = () => {
@@ -221,6 +237,8 @@ export default function App() {
         onOpenControls={() => setIsControlsOpen(true)}
         onOpenVibe={() => setIsVibeOpen(true)}
         onOpenResume={() => setIsResumeOpen(true)}
+        onOpenFeatures={() => setIsFeaturesOpen(true)}
+        onOpenCommandPalette={() => setIsCommandPaletteOpen(true)}
         activeSection={activeSection}
         activeMix={activeMix}
         isVibePlaying={isVibePlaying}
@@ -236,6 +254,7 @@ export default function App() {
         <HeroSection
           onOpenSimulator={() => handleNavigateSection('simulator')}
           onOpenResume={() => setIsResumeOpen(true)}
+          onOpenFeatures={() => setIsFeaturesOpen(true)}
         />
 
         <AboutSection />
@@ -262,6 +281,7 @@ export default function App() {
       <BottomDock
         onOpenVibe={() => setIsVibeOpen(true)}
         onOpenResume={() => setIsResumeOpen(true)}
+        onOpenFeatures={() => setIsFeaturesOpen(true)}
         activeSection={activeSection}
         activeVibeCount={Object.keys(activeMix).length}
         isVibePlaying={isVibePlaying}
@@ -299,6 +319,31 @@ export default function App() {
         onApplyPreset={handleApplyPreset}
         onClearMix={handleClearMix}
         onRandomMix={handleRandomMix}
+      />
+
+      {/* 9. Comprehensive App Features Directory (28+ Unlimited & Free Features) */}
+      <FeaturesModal
+        isOpen={isFeaturesOpen}
+        onClose={() => setIsFeaturesOpen(false)}
+        onNavigateSection={handleNavigateSection}
+        onOpenControls={() => setIsControlsOpen(true)}
+        onOpenResume={() => setIsResumeOpen(true)}
+        onOpenVibe={() => setIsVibeOpen(true)}
+        onOpenCommandPalette={() => setIsCommandPaletteOpen(true)}
+        onToggleTheme={handleToggleTheme}
+      />
+
+      {/* 10. Command Palette & Global Search (⌘K / Ctrl+K) */}
+      <CommandPalette
+        isOpen={isCommandPaletteOpen}
+        onClose={() => setIsCommandPaletteOpen(false)}
+        onNavigateSection={handleNavigateSection}
+        onToggleTheme={handleToggleTheme}
+        onOpenSimulator={() => handleNavigateSection('simulator')}
+        onOpenResume={() => setIsResumeOpen(true)}
+        onOpenFeatures={() => setIsFeaturesOpen(true)}
+        onOpenVibe={() => setIsVibeOpen(true)}
+        theme={theme}
       />
     </div>
   );

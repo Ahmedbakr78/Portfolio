@@ -16,14 +16,14 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-      {/* Backdrop - transparent so background is never hidden */}
+      {/* High-Contrast Backdrop with Blur */}
       <div
-        className="fixed inset-0 bg-transparent"
+        className="fixed inset-0 bg-black/85 backdrop-blur-md"
         onClick={onClose}
       />
 
-      {/* Modal Dialog */}
-      <div className="relative w-full max-w-3xl bg-zinc-950/85 text-white rounded-3xl p-6 sm:p-10 border border-white/20 shadow-[0_24px_80px_rgba(0,0,0,0.65)] overflow-y-auto max-h-[90vh] z-10 animate-in fade-in zoom-in-95 duration-200 liquid-glass">
+      {/* Modal Dialog — Solid 98% Opacity Window */}
+      <div className="relative w-full max-w-3xl bg-zinc-950/98 text-white rounded-3xl p-6 sm:p-10 border border-white/20 shadow-[0_30px_90px_rgba(0,0,0,0.9)] overflow-y-auto max-h-[90vh] z-10 animate-in fade-in zoom-in-95 duration-200 liquid-glass-modal">
         {/* Top Action Bar */}
         <div className="flex items-center justify-between pb-6 border-b border-white/10 no-print">
           <div className="flex items-center gap-2">

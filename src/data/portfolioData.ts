@@ -53,7 +53,7 @@ export interface Article {
 export interface AppFeature {
   id: string;
   title: string;
-  category: '3D & Graphics' | 'Data Simulation' | 'Search & Filters' | 'Controls & Themes' | 'Accessibility & Mobile';
+  category: '3D & Graphics' | 'Data Simulation' | 'Search & Filters' | 'Controls & Themes' | 'Accessibility & Mobile' | 'Audio & Focus' | 'Performance & AI';
   description: string;
   icon: string;
   isUnlimited: boolean;
@@ -1484,6 +1484,7 @@ export const ARTICLES: Article[] = [
 ];
 
 export const APP_FEATURES: AppFeature[] = [
+  // 1. 3D & Graphics Engine
   {
     id: "feat-1",
     title: "Autonomous 3D Background Engine",
@@ -1495,15 +1496,35 @@ export const APP_FEATURES: AppFeature[] = [
   },
   {
     id: "feat-2",
-    title: "Dual Monochrome Mode (Dark & White)",
-    category: "Controls & Themes",
-    description: "Instant switch between high-contrast Onyx Black mode and pristine Minimal White mode with persistent preference storage.",
-    icon: "SunMoon",
+    title: "4-Style 3D Shader Switcher",
+    category: "3D & Graphics",
+    description: "Switch seamlessly between Neural Constellation, Quantum Data Matrix, Polyhedron Geometry, and Minimal Ambient visual shaders.",
+    icon: "Sparkles",
     isUnlimited: true,
     status: "Active"
   },
   {
     id: "feat-3",
+    title: "Adaptive GPU Frame Rate Optimization",
+    category: "3D & Graphics",
+    description: "Device-aware rendering automatically balancing hardware capabilities to guarantee silky 60/120 FPS without battery drain.",
+    icon: "Zap",
+    isUnlimited: true,
+    status: "Active"
+  },
+  {
+    id: "feat-4",
+    title: "Dynamic Monochrome Shading Engine",
+    category: "3D & Graphics",
+    description: "Real-time color space interpolation between Onyx Black space and Pristine Minimal White mode with fluid particle tinting.",
+    icon: "SunMoon",
+    isUnlimited: true,
+    status: "Active"
+  },
+
+  // 2. Data Engineering & Simulation
+  {
+    id: "feat-5",
     title: "Interactive Big Data Pipeline Simulator",
     category: "Data Simulation",
     description: "Live interactive simulator showcasing Spark streaming, Kafka queues, and Airflow orchestration with real-time throughput metrics.",
@@ -1512,7 +1533,7 @@ export const APP_FEATURES: AppFeature[] = [
     status: "Active"
   },
   {
-    id: "feat-4",
+    id: "feat-6",
     title: "SQL Query Playground & Sandbox",
     category: "Data Simulation",
     description: "Execute simulated T-SQL queries against distributed analytics datasets right in your browser with immediate query plans and benchmarks.",
@@ -1521,52 +1542,83 @@ export const APP_FEATURES: AppFeature[] = [
     status: "Active"
   },
   {
-    id: "feat-5",
-    title: "73+ Certifications Explorer & Verifier",
-    category: "Search & Filters",
-    description: "Browse, filter, and verify 73+ certifications across Google, Microsoft, Oxford, Duke, and UN with one-click credential ID copying.",
-    icon: "Award",
-    isUnlimited: true,
-    status: "Active"
-  },
-  {
-    id: "feat-6",
-    title: "100-Skill Interactive Matrix & Radar",
-    category: "Search & Filters",
-    description: "Explore all technical competencies categorized across 6 core engineering domains with interactive search and proficiency bars.",
-    icon: "Sliders",
-    isUnlimited: true,
-    status: "Active"
-  },
-  {
     id: "feat-7",
-    title: "Global Zero-Scrollbar Discipline",
-    category: "Accessibility & Mobile",
-    description: "Scrollbars hidden throughout the entire app per user specifications while maintaining silky-smooth scroll physics.",
-    icon: "Maximize2",
+    title: "Big Data Architecture & Storage Estimator",
+    category: "Data Simulation",
+    description: "Interactive distributed compute and storage modeler calculating compression ratios and query latency across Lakehouse formats.",
+    icon: "Database",
     isUnlimited: true,
     status: "Active"
   },
   {
     id: "feat-8",
-    title: "Rounded Top Bar & Floating Bottom Dock",
-    category: "Controls & Themes",
-    description: "Pill-shaped rounded navigation bar and floating bottom quick-access dock designed for swift thumb and keyboard interaction.",
-    icon: "Layout",
+    title: "Real-Time Streaming Throughput Benchmarker",
+    category: "Data Simulation",
+    description: "Interactive stress-test engine simulating 10,000 to 500,000 events/second with backpressure calculation and consumer group lag.",
+    icon: "Layers",
     isUnlimited: true,
     status: "Active"
   },
+
+  // 3. Audio & Focus System
   {
     id: "feat-9",
-    title: "Silent Smooth Reload Transitions",
-    category: "Controls & Themes",
-    description: "No weird jarring page animations or flash of unstyled content; transitions execute with calm, silent elegance.",
-    icon: "Zap",
+    title: "Ahmed Vibe Ambient Soundscape Engine (84 Sounds)",
+    category: "Audio & Focus",
+    description: "Comprehensive procedural audio synthesizer with 84 curated ambient tracks across Nature, Urban, Binaural, Sci-Fi, ASMR, Office, and White Noise.",
+    icon: "AudioLines",
     isUnlimited: true,
     status: "Active"
   },
   {
     id: "feat-10",
+    title: "Multi-Track Soundscape Mixer",
+    category: "Audio & Focus",
+    description: "Simultaneous multi-channel continuous playback with individual volume faders, master volume, and low-latency Web Audio API synthesis.",
+    icon: "Sliders",
+    isUnlimited: true,
+    status: "Active"
+  },
+  {
+    id: "feat-11",
+    title: "Apple Dynamic Island Live Controller",
+    category: "Audio & Focus",
+    description: "Integrated top-bar floating dynamic island featuring live equalizer visualizer, quick transport controls, and soundscape switcher.",
+    icon: "Sparkles",
+    isUnlimited: true,
+    status: "Active"
+  },
+  {
+    id: "feat-12",
+    title: "Instant Soundscape Presets",
+    category: "Audio & Focus",
+    description: "One-tap presets for Deep Focus, Cyberpunk Code, Rainy Sanctuary, Coffee Roastery, Forest Retreat, and Cosmic Void.",
+    icon: "Zap",
+    isUnlimited: true,
+    status: "Active"
+  },
+  {
+    id: "feat-13",
+    title: "Harmonic Random Mix Generator",
+    category: "Audio & Focus",
+    description: "Intelligent algorithmic shuffling that dynamically blends complementary frequencies for non-fatiguing focus sessions.",
+    icon: "Boxes",
+    isUnlimited: true,
+    status: "Active"
+  },
+  {
+    id: "feat-14",
+    title: "Continuous Non-Stop Background Playback",
+    category: "Audio & Focus",
+    description: "Audio continues playing uninterrupted across all pages, modal closes, and section scrolls for undisturbed engineering flow.",
+    icon: "Activity",
+    isUnlimited: true,
+    status: "Active"
+  },
+
+  // 4. Search, Navigation & Discovery
+  {
+    id: "feat-15",
     title: "Command Palette & Quick Search (⌘K)",
     category: "Search & Filters",
     description: "Instant keyboard-driven search indexing all 10 projects, 73 certifications, 10 articles, and 100 skills in milliseconds.",
@@ -1575,38 +1627,123 @@ export const APP_FEATURES: AppFeature[] = [
     status: "Active"
   },
   {
-    id: "feat-11",
-    title: "Printable PDF Resume Exporter",
+    id: "feat-16",
+    title: "73+ Certifications Explorer & Verifier",
+    category: "Search & Filters",
+    description: "Browse, filter, and verify 73+ certifications across Google, Microsoft, Oxford, Duke, and UN with one-click credential ID copying.",
+    icon: "Award",
+    isUnlimited: true,
+    status: "Active"
+  },
+  {
+    id: "feat-17",
+    title: "100-Skill Interactive Matrix & Radar",
+    category: "Search & Filters",
+    description: "Explore all technical competencies categorized across 6 core engineering domains with interactive search and proficiency bars.",
+    icon: "Sliders",
+    isUnlimited: true,
+    status: "Active"
+  },
+  {
+    id: "feat-18",
+    title: "Production Projects Architecture Showcase",
+    category: "Search & Filters",
+    description: "Detailed case studies covering multi-tier ETL, medallion data lakehouses, and high-frequency automated scraping systems.",
+    icon: "Layers",
+    isUnlimited: true,
+    status: "Active"
+  },
+  {
+    id: "feat-19",
+    title: "Technical Thought Leadership Articles",
+    category: "Search & Filters",
+    description: "Deep-dive architectural essays on ACID guarantees, distributed query optimization, and real-time streaming architectures.",
+    icon: "FileText",
+    isUnlimited: true,
+    status: "Active"
+  },
+
+  // 5. Controls, Themes & Ergonomics
+  {
+    id: "feat-20",
+    title: "Dual Monochrome Mode (Dark & White)",
     category: "Controls & Themes",
+    description: "Instant switch between high-contrast Onyx Black mode and pristine Minimal White mode with persistent preference storage.",
+    icon: "SunMoon",
+    isUnlimited: true,
+    status: "Active"
+  },
+  {
+    id: "feat-21",
+    title: "Rounded Floating VisionOS Slidebar",
+    category: "Controls & Themes",
+    description: "Modern floating drawer with elegant rounded corners, safe touch padding, full app navigation, and instant tool access.",
+    icon: "Layout",
+    isUnlimited: true,
+    status: "Active"
+  },
+  {
+    id: "feat-22",
+    title: "Rounded Top Bar & Floating Bottom Dock",
+    category: "Controls & Themes",
+    description: "Pill-shaped rounded navigation bar and floating bottom quick-access dock designed for swift thumb and keyboard interaction.",
+    icon: "Layout",
+    isUnlimited: true,
+    status: "Active"
+  },
+  {
+    id: "feat-23",
+    title: "Silent Smooth Navigation Mode",
+    category: "Controls & Themes",
+    description: "Optional toggle to eliminate animation delay and jump instantaneously to sections for maximum engineering velocity.",
+    icon: "Zap",
+    isUnlimited: true,
+    status: "Active"
+  },
+
+  // 6. Accessibility, Mobile & Performance
+  {
+    id: "feat-24",
+    title: "Full Mobile Responsive Slidebar Menu",
+    category: "Accessibility & Mobile",
+    description: "Optimized for mobile touchscreens with rounded slidebar drawer, full icon navigation, and accessible tap targets.",
+    icon: "Smartphone",
+    isUnlimited: true,
+    status: "Active"
+  },
+  {
+    id: "feat-25",
+    title: "Global Zero-Scrollbar Discipline",
+    category: "Accessibility & Mobile",
+    description: "Scrollbars hidden throughout the entire app per user specifications while maintaining silky-smooth scroll physics.",
+    icon: "Maximize2",
+    isUnlimited: true,
+    status: "Active"
+  },
+  {
+    id: "feat-26",
+    title: "Printable ATS-Optimized Resume PDF",
+    category: "Accessibility & Mobile",
     description: "One-click generation of a clean, ATS-optimized print and PDF layout of Ahmed Abo Bakr's credentials and work history.",
     icon: "FileText",
     isUnlimited: true,
     status: "Active"
   },
   {
-    id: "feat-12",
-    title: "Full Mobile Responsive Slidebar Menu",
-    category: "Accessibility & Mobile",
-    description: "Optimized for mobile touchscreens with slidebar drawer, full icon navigation, and accessible tap targets.",
-    icon: "Smartphone",
-    isUnlimited: true,
-    status: "Active"
-  },
-  {
-    id: "feat-13",
-    title: "3D Background Customizer",
-    category: "3D & Graphics",
-    description: "Toggle between 4 distinct visual styles: Neural Constellation, Quantum Data Matrix, Geometric Polyhedron, or Minimal Ambient.",
-    icon: "Sparkles",
-    isUnlimited: true,
-    status: "Active"
-  },
-  {
-    id: "feat-14",
+    id: "feat-27",
     title: "Direct Collaboration & vCard Download",
     category: "Accessibility & Mobile",
     description: "Download electronic business card (.vcf), copy contact details with toast confirmation, or dispatch a direct inquiry.",
     icon: "Mail",
+    isUnlimited: true,
+    status: "Active"
+  },
+  {
+    id: "feat-28",
+    title: "Real-Time System Diagnostics & Health Monitor",
+    category: "Performance & AI",
+    description: "Live real-time monitoring of render framerates (FPS), Web Audio synthesis latency, DOM node efficiency, and memory footprint.",
+    icon: "Activity",
     isUnlimited: true,
     status: "Active"
   }

@@ -189,17 +189,17 @@ export const NevaiVibeModal: React.FC<NevaiVibeModalProps> = ({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 bg-transparent"
+            className="fixed inset-0 bg-black/85 backdrop-blur-md"
             onClick={onClose}
           />
 
-          {/* Main Ahmed Vibe Studio Modal */}
+          {/* Main Ahmed Vibe Studio Modal — Solid 98% Opacity Window */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95, y: 16 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.96, y: 12 }}
             transition={{ type: 'spring', stiffness: 340, damping: 28 }}
-            className="relative w-full max-w-6xl bg-zinc-950/85 text-white rounded-[32px] border border-white/20 shadow-[0_24px_80px_rgba(0,0,0,0.65)] overflow-hidden z-10 flex flex-col h-[90vh] max-h-[92vh] liquid-glass"
+            className="relative w-full max-w-6xl bg-zinc-950/98 text-white rounded-[32px] border border-white/20 shadow-[0_30px_90px_rgba(0,0,0,0.9)] overflow-hidden z-10 flex flex-col h-[90vh] max-h-[92vh] liquid-glass-modal"
           >
             {/* Top Header (Auto-compacts when scrolling the sounds list) */}
             <div

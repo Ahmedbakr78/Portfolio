@@ -21,6 +21,7 @@ import { PERSONAL_INFO, PROJECTS } from '../data/portfolioData';
 interface HeroSectionProps {
   onOpenSimulator: () => void;
   onOpenResume: () => void;
+  onOpenFeatures?: () => void;
 }
 
 type PortraitStyleMode = 'studio' | 'natural' | 'warm' | 'mono' | 'avatar-3d';
@@ -28,6 +29,7 @@ type PortraitStyleMode = 'studio' | 'natural' | 'warm' | 'mono' | 'avatar-3d';
 export const HeroSection: React.FC<HeroSectionProps> = ({
   onOpenSimulator,
   onOpenResume,
+  onOpenFeatures,
 }) => {
   const [portraitMode, setPortraitMode] = useState<PortraitStyleMode>('studio');
   const [canvasReady, setCanvasReady] = useState(false);
@@ -309,6 +311,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             <MapPin className="w-3.5 h-3.5 text-zinc-300 shrink-0" />
             <span className="truncate">Cairo, Egypt · {PERSONAL_INFO.email}</span>
           </div>
+
+          {onOpenFeatures && (
+            <button
+              type="button"
+              onClick={onOpenFeatures}
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full glass-panel text-[11px] sm:text-xs text-emerald-300 hover:text-white hover:bg-emerald-500/20 border border-emerald-500/30 transition-all font-mono"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-emerald-400 shrink-0 animate-pulse" />
+              <span>28+ FREE & UNLIMITED FEATURES</span>
+            </button>
+          )}
         </motion.div>
 
         {/* Hero Card with Liquid Glass */}

@@ -9,7 +9,9 @@ import {
   Sun,
   Moon,
   Mail,
-  Download
+  Download,
+  Sparkles,
+  AudioLines
 } from 'lucide-react';
 import { PROJECTS, CERTIFICATIONS, ARTICLES } from '../data/portfolioData';
 
@@ -20,6 +22,8 @@ interface CommandPaletteProps {
   onToggleTheme: () => void;
   onOpenSimulator: () => void;
   onOpenResume: () => void;
+  onOpenFeatures?: () => void;
+  onOpenVibe?: () => void;
   theme: 'dark' | 'light';
 }
 
@@ -30,6 +34,8 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
   onToggleTheme,
   onOpenSimulator,
   onOpenResume,
+  onOpenFeatures,
+  onOpenVibe,
   theme,
 }) => {
   const [query, setQuery] = useState('');
@@ -54,6 +60,26 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
   if (!isOpen) return null;
 
   const quickActions = [
+    ...(onOpenFeatures
+      ? [
+          {
+            label: 'Explore All Features Directory (28+ Unlimited & Free)',
+            icon: Sparkles,
+            action: onOpenFeatures,
+            tag: 'Suite',
+          },
+        ]
+      : []),
+    ...(onOpenVibe
+      ? [
+          {
+            label: 'Open Ahmed Vibe Studio (84 Sounds & Multi-Mixer)',
+            icon: AudioLines,
+            action: onOpenVibe,
+            tag: 'Audio',
+          },
+        ]
+      : []),
     {
       label: 'Launch Big Data Pipeline Simulator',
       icon: Activity,
@@ -100,14 +126,14 @@ export const CommandPalette: React.FC<CommandPaletteProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-start justify-center pt-20 sm:pt-28 p-4">
-      {/* Backdrop */}
+      {/* High-Contrast Backdrop with Blur */}
       <div
-        className="fixed inset-0 bg-black/80 backdrop-blur-md"
+        className="fixed inset-0 bg-black/85 backdrop-blur-md"
         onClick={onClose}
       />
 
-      {/* Palette Card */}
-      <div className="relative w-full max-w-xl bg-zinc-950 text-white rounded-3xl border border-white/20 shadow-2xl overflow-hidden z-10 animate-in fade-in zoom-in-95 duration-150">
+      {/* Palette Card — Solid 98% Opacity Window */}
+      <div className="relative w-full max-w-xl bg-zinc-950/98 text-white rounded-3xl border border-white/20 shadow-[0_30px_90px_rgba(0,0,0,0.9)] overflow-hidden z-10 animate-in fade-in zoom-in-95 duration-150 liquid-glass-modal">
         {/* Search Input Bar */}
         <div className="flex items-center gap-3 p-4 border-b border-white/10 bg-white/[0.02]">
           <Search className="w-5 h-5 text-zinc-400 ml-2" />

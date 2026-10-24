@@ -11,12 +11,14 @@ import {
   Mail,
   AudioLines,
   FileText,
-  ArrowUp
+  ArrowUp,
+  Sparkles
 } from 'lucide-react';
 
 interface BottomDockProps {
   onOpenVibe: () => void;
   onOpenResume?: () => void;
+  onOpenFeatures?: () => void;
   activeSection: string;
   activeVibeCount: number;
   isVibePlaying: boolean;
@@ -25,6 +27,7 @@ interface BottomDockProps {
 export const BottomDock: React.FC<BottomDockProps> = ({
   onOpenVibe,
   onOpenResume,
+  onOpenFeatures,
   activeSection,
   activeVibeCount,
   isVibePlaying,
@@ -196,6 +199,35 @@ export const BottomDock: React.FC<BottomDockProps> = ({
             )}
           </AnimatePresence>
         </motion.button>
+
+        {onOpenFeatures && (
+          <motion.button
+            layout
+            whileHover={{ scale: 1.07, y: -2 }}
+            whileTap={{ scale: 0.94 }}
+            onMouseEnter={() => setHoveredItem('features')}
+            onMouseLeave={() => setHoveredItem(null)}
+            onClick={onOpenFeatures}
+            aria-label="Open Features Directory"
+            className="p-2 sm:px-3 sm:py-1.5 rounded-full hover:bg-white/10 text-emerald-300 hover:text-emerald-200 transition-colors flex items-center gap-1.5 text-xs font-medium shrink-0"
+            title="All Features Directory (28+ Unlimited & Free)"
+          >
+            <Sparkles className="w-4 h-4 text-emerald-400 shrink-0" />
+            <AnimatePresence initial={false}>
+              {(!collapseLabels || hoveredItem === 'features') && (
+                <motion.span
+                  initial={{ opacity: 0, width: 0 }}
+                  animate={{ opacity: 1, width: 'auto' }}
+                  exit={{ opacity: 0, width: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="hidden md:inline-block overflow-hidden whitespace-nowrap"
+                >
+                  Features
+                </motion.span>
+              )}
+            </AnimatePresence>
+          </motion.button>
+        )}
 
         {onOpenResume && (
           <motion.button

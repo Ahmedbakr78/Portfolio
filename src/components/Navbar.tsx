@@ -33,6 +33,8 @@ interface NavbarProps {
   onOpenControls: () => void;
   onOpenVibe: () => void;
   onOpenResume?: () => void;
+  onOpenFeatures?: () => void;
+  onOpenCommandPalette?: () => void;
   activeSection: string;
   // Dynamic Island & Vibe Audio Props
   activeMix: Record<string, number>;
@@ -50,6 +52,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   onOpenControls,
   onOpenVibe,
   onOpenResume,
+  onOpenFeatures,
+  onOpenCommandPalette,
   activeSection,
   activeMix,
   isVibePlaying,
@@ -178,43 +182,65 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </button>
 
                 {/* Status Label inside Dynamic Island */}
-                <div className="flex flex-col text-left min-w-[60px] max-w-[90px] sm:min-w-[85px] sm:max-w-[130px]">
+                <div className="flex flex-col text-left min-w-[50px] max-w-[80px] sm:min-w-[85px] sm:max-w-[130px]">
                   <div className="flex items-center gap-1">
-                    <span className="text-[9px] sm:text-[10px] font-bold tracking-wider uppercase text-white truncate">
+                    <span className="text-[9px] sm:text-[10px] font-bold tracking-tight uppercase text-white truncate">
                       {activeCount > 0
-                        ? activeSoundNames.slice(0, 2).join(' + ')
+                        ? activeSoundNames[0] || 'Vibe Active'
                         : 'Ahmed Vibe'}
                     </span>
                   </div>
                   <span className="text-[8px] sm:text-[9px] font-mono text-zinc-400 truncate">
                     {activeCount > 0
-                      ? `${activeCount} Active • ${isVibePlaying ? 'On' : 'Paused'}`
+                      ? `${activeCount} Active • ${isVibePlaying ? 'On' : 'Off'}`
                       : '84 Sounds'}
                   </span>
                 </div>
 
-                {/* Animated Equalizer Waveform Bars */}
-                <div className="hidden sm:flex items-end gap-0.5 h-3.5 px-0.5">
-                  {[0, 1, 2, 3, 4].map((bar) => (
+                {/* Animated Equalizer Waveform Bars (Mobile 3-bar, Desktop 5-bar) */}
+                <div className="flex items-end gap-0.5 h-3 sm:h-3.5 px-0.5 shrink-0">
+                  {[0, 1, 2].map((bar) => (
                     <motion.span
                       key={bar}
                       animate={
                         isVibePlaying && activeCount > 0
                           ? {
-                              height: ['25%', '100%', '45%', '90%', '30%'],
+                              height: ['30%', '100%', '50%', '90%', '35%'],
                             }
-                          : { height: '25%' }
+                          : { height: '30%' }
                       }
                       transition={
                         isVibePlaying && activeCount > 0
                           ? {
-                              duration: 0.9 + bar * 0.15,
+                              duration: 0.8 + bar * 0.18,
                               repeat: Infinity,
                               ease: 'easeInOut',
                             }
                           : { duration: 0.2 }
                       }
                       className="w-0.5 bg-white rounded-full block"
+                    />
+                  ))}
+                  {[3, 4].map((bar) => (
+                    <motion.span
+                      key={bar}
+                      animate={
+                        isVibePlaying && activeCount > 0
+                          ? {
+                              height: ['25%', '90%', '40%', '100%', '30%'],
+                            }
+                          : { height: '25%' }
+                      }
+                      transition={
+                        isVibePlaying && activeCount > 0
+                          ? {
+                              duration: 1.0 + bar * 0.15,
+                              repeat: Infinity,
+                              ease: 'easeInOut',
+                            }
+                          : { duration: 0.2 }
+                      }
+                      className="hidden sm:block w-0.5 bg-white rounded-full"
                     />
                   ))}
                 </div>
@@ -234,7 +260,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: -10, scale: 0.92 }}
                     transition={{ type: 'spring', stiffness: 380, damping: 28 }}
-                    className="fixed top-16 left-3 right-3 mx-auto max-w-[350px] sm:absolute sm:top-12 sm:left-1/2 sm:right-auto sm:-translate-x-1/2 sm:w-[360px] rounded-[28px] liquid-glass bg-zinc-950 text-white border border-white/25 p-4 shadow-2xl z-50"
+                    className="fixed top-14 left-2.5 right-2.5 mx-auto max-w-[350px] sm:absolute sm:top-12 sm:left-1/2 sm:right-auto sm:-translate-x-1/2 sm:w-[360px] rounded-[28px] liquid-glass-modal bg-zinc-950/98 text-white border border-white/25 p-4 shadow-2xl z-50"
                   >
                     <div className="flex items-center justify-between pb-3 border-b border-white/10">
                       <div className="flex items-center gap-2.5">
@@ -416,13 +442,13 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             {/* 4. Action Controls Pill (Vibe Button + Controls + Theme + Mobile Menu) */}
             <div className="flex items-center gap-0.5 sm:gap-1 px-1.5 sm:px-2 py-1 sm:py-1.5 rounded-full liquid-glass-pill shrink-0">
-              {/* Ahmed Vibe Button */}
+              {/* Ahmed Vibe Button - hidden on mobile screens so it doesn't duplicate Dynamic Island and crowd the top bar */}
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={onOpenVibe}
                 aria-label="Open Ahmed Vibe Mixer"
-                className={`px-2 sm:px-2.5 py-1.5 rounded-full flex items-center gap-1 text-xs font-bold whitespace-nowrap transition-all ${
+                className={`hidden sm:flex px-2 sm:px-2.5 py-1.5 rounded-full items-center gap-1 text-xs font-bold whitespace-nowrap transition-all ${
                   isVibePlaying && activeCount > 0
                     ? 'bg-white text-black shadow-sm'
                     : 'text-zinc-200 hover:text-white hover:bg-white/10'
@@ -488,7 +514,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           {/* Mobile & Tablet Horizontal Section Bar (< xl) so the full app is 1-tap available on mobile */}
-          <div className="xl:hidden flex items-center gap-1 overflow-x-auto px-2 py-1 rounded-full liquid-glass-pill max-w-full">
+          <div className="xl:hidden flex items-center gap-1 overflow-x-auto px-2 py-1 rounded-full liquid-glass-pill max-w-full scrollbar-none touch-pan-x">
             {navLinks.map((link) => {
               const Icon = link.icon;
               const isActive = activeSection === link.href.replace('#', '');
@@ -508,6 +534,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </button>
               );
             })}
+            {onOpenFeatures && (
+              <button
+                type="button"
+                onClick={onOpenFeatures}
+                className="flex items-center gap-1 px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold whitespace-nowrap text-emerald-300 bg-emerald-500/15 hover:bg-emerald-500/25 border border-emerald-500/30 transition-all shrink-0"
+              >
+                <Sparkles className="w-3 h-3 text-emerald-400 shrink-0" />
+                <span>Features</span>
+              </button>
+            )}
             {onOpenResume && (
               <button
                 type="button"
@@ -522,97 +558,158 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
       </header>
 
-      {/* Mobile Slidebar Menu / Full App Launcher Drawer */}
+      {/* Mobile Slidebar Menu / Full App Launcher Drawer — Floating, Fully Rounded VisionOS Sheet */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <div className="fixed inset-0 z-50 xl:hidden">
-            {/* Backdrop - transparent so background is never hidden */}
+            {/* Backdrop with Smooth Blur and High Contrast */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-transparent"
+              className="fixed inset-0 bg-black/75 backdrop-blur-md"
               onClick={() => setMobileMenuOpen(false)}
             />
 
-            {/* Drawer Panel */}
+            {/* Floating Rounded Slidebar Drawer */}
             <motion.div
-              initial={{ x: '100%' }}
-              animate={{ x: 0 }}
-              exit={{ x: '100%' }}
+              initial={{ x: '100%', opacity: 0.8 }}
+              animate={{ x: 0, opacity: 1 }}
+              exit={{ x: '100%', opacity: 0.8 }}
               transition={{ type: 'spring', stiffness: 340, damping: 32 }}
-              className="fixed top-0 right-0 bottom-0 w-80 max-w-[88vw] bg-zinc-950/95 text-white p-5 sm:p-6 shadow-2xl flex flex-col justify-between border-l border-white/15 liquid-glass overflow-y-auto"
+              className="fixed top-2 sm:top-3 right-2 sm:right-3 bottom-2 sm:bottom-3 w-[calc(100vw-16px)] sm:w-88 max-w-[360px] bg-zinc-950/98 text-white p-4 sm:p-5 rounded-[28px] sm:rounded-[34px] shadow-[0_25px_80px_rgba(0,0,0,0.9)] flex flex-col justify-between border border-white/20 liquid-glass-modal overflow-y-auto scrollbar-none z-50"
             >
               <div>
-                <div className="flex items-center justify-between pb-5 border-b border-white/10">
+                {/* Profile Header */}
+                <div className="flex items-center justify-between pb-4 border-b border-white/10">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full overflow-hidden border border-white/25 bg-[#f4f4f6] shrink-0">
+                    <div className="relative w-10 h-10 rounded-full overflow-hidden border border-white/25 bg-[#f4f4f6] shrink-0">
                       <img
                         src={PERSONAL_INFO.avatar}
                         alt={PERSONAL_INFO.name}
                         className="w-full h-full object-cover object-[48%_36%] scale-125"
                       />
+                      <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-black" />
                     </div>
                     <div>
-                      <h3 className="text-sm font-bold text-white">{PERSONAL_INFO.name}</h3>
+                      <h3 className="text-sm font-bold text-white flex items-center gap-1.5">
+                        <span>{PERSONAL_INFO.name}</span>
+                        <span className="text-[10px] font-mono px-1.5 py-0.2 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                          Available
+                        </span>
+                      </h3>
                       <p className="text-[11px] text-zinc-400 font-mono">Big Data & AI Architect</p>
                     </div>
                   </div>
                   <button
                     onClick={() => setMobileMenuOpen(false)}
-                    className="p-2 rounded-full hover:bg-white/10 text-zinc-400 hover:text-white"
+                    className="p-2 rounded-full hover:bg-white/10 text-zinc-400 hover:text-white transition-colors"
                     aria-label="Close menu"
                   >
                     <X className="w-5 h-5" />
                   </button>
                 </div>
 
-                {/* Navigation Items */}
-                <div className="mt-5 grid grid-cols-2 gap-1.5">
-                  {navLinks.map((link) => {
-                    const Icon = link.icon;
-                    const isActive = activeSection === link.href.replace('#', '');
-                    return (
+                {/* Section Navigation Grid */}
+                <div className="mt-4">
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-400 block mb-2 px-1">
+                    Quick Navigation
+                  </span>
+                  <div className="grid grid-cols-2 gap-1.5">
+                    {navLinks.map((link) => {
+                      const Icon = link.icon;
+                      const isActive = activeSection === link.href.replace('#', '');
+                      return (
+                        <button
+                          key={link.name}
+                          onClick={() => handleNavClick(link.href)}
+                          className={`flex items-center gap-2.5 w-full px-3 py-2.5 rounded-2xl text-left text-xs font-semibold transition-all ${
+                            isActive
+                              ? 'bg-white text-black shadow-md font-bold'
+                              : 'bg-white/[0.04] text-zinc-300 hover:text-white hover:bg-white/10 border border-white/10'
+                          }`}
+                        >
+                          <Icon className="w-3.5 h-3.5 shrink-0" />
+                          <span className="truncate">{link.name}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Feature Suite Direct Access */}
+                <div className="mt-4 pt-3 border-t border-white/10">
+                  <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-400 block mb-2 px-1">
+                    Free & Unlimited Suite
+                  </span>
+                  <div className="space-y-1.5">
+                    {onOpenFeatures && (
                       <button
-                        key={link.name}
-                        onClick={() => handleNavClick(link.href)}
-                        className={`flex items-center gap-2.5 w-full px-3.5 py-2.5 rounded-2xl text-left text-xs font-semibold transition-colors ${
-                          isActive
-                            ? 'bg-white text-black shadow-sm'
-                            : 'bg-white/[0.04] text-zinc-300 hover:text-white hover:bg-white/10 border border-white/10'
-                        }`}
+                        onClick={() => {
+                          setMobileMenuOpen(false);
+                          onOpenFeatures();
+                        }}
+                        className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-300 hover:bg-emerald-500/25 transition-all text-xs font-semibold"
                       >
-                        <Icon className="w-3.5 h-3.5 shrink-0" />
-                        <span>{link.name}</span>
+                        <div className="flex items-center gap-2">
+                          <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
+                          <span>All Features Directory</span>
+                        </div>
+                        <span className="text-[10px] font-mono px-1.5 py-0.5 rounded-full bg-emerald-500/25 text-white">
+                          28+ Free
+                        </span>
                       </button>
-                    );
-                  })}
+                    )}
+
+                    <button
+                      onClick={() => {
+                        setMobileMenuOpen(false);
+                        onOpenVibe();
+                      }}
+                      className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-white/[0.06] border border-white/15 text-white hover:bg-white/10 transition-all text-xs font-semibold"
+                    >
+                      <div className="flex items-center gap-2">
+                        <AudioLines className="w-3.5 h-3.5 text-white" />
+                        <span>Ahmed Vibe Studio</span>
+                      </div>
+                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded-full bg-white/15 text-zinc-200">
+                        {activeCount > 0 ? `${activeCount} On` : '84 Sounds'}
+                      </span>
+                    </button>
+
+                    {onOpenCommandPalette && (
+                      <button
+                        onClick={() => {
+                          setMobileMenuOpen(false);
+                          onOpenCommandPalette();
+                        }}
+                        className="w-full flex items-center justify-between px-3.5 py-2.5 rounded-2xl bg-white/[0.04] border border-white/10 text-zinc-200 hover:bg-white/10 transition-all text-xs font-medium"
+                      >
+                        <div className="flex items-center gap-2">
+                          <Search className="w-3.5 h-3.5 text-zinc-400" />
+                          <span>Command Search</span>
+                        </div>
+                        <span className="text-[10px] font-mono px-1.5 py-0.5 rounded-full bg-white/10 text-zinc-400">
+                          ⌘K
+                        </span>
+                      </button>
+                    )}
+                  </div>
                 </div>
               </div>
 
-              {/* Quick Actions Drawer Footer — Full App Features on Mobile */}
-              <div className="pt-5 mt-5 border-t border-white/10 flex flex-col gap-2">
-                <button
-                  onClick={() => {
-                    setMobileMenuOpen(false);
-                    onOpenVibe();
-                  }}
-                  className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white text-black font-bold text-xs shadow-md"
-                >
-                  <AudioLines className="w-3.5 h-3.5" />
-                  <span>Ahmed Vibe Studio (84 Sounds)</span>
-                </button>
-
+              {/* Quick Actions Drawer Footer */}
+              <div className="pt-4 mt-4 border-t border-white/10 flex flex-col gap-2">
                 {onOpenResume && (
                   <button
                     onClick={() => {
                       setMobileMenuOpen(false);
                       onOpenResume();
                     }}
-                    className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-white/10 border border-white/15 text-white font-semibold text-xs hover:bg-white/20"
+                    className="w-full flex items-center justify-center gap-2 py-2.5 rounded-2xl bg-white text-black font-bold text-xs shadow-md hover:bg-zinc-200 transition-colors"
                   >
                     <FileText className="w-3.5 h-3.5" />
-                    <span>Interactive Resume / CV (PDF)</span>
+                    <span>Printable Resume / CV (PDF)</span>
                   </button>
                 )}
 
@@ -622,7 +719,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                       setMobileMenuOpen(false);
                       onOpenControls();
                     }}
-                    className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-zinc-900 border border-white/10 text-xs text-zinc-300 hover:text-white"
+                    className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-2xl bg-white/[0.06] border border-white/15 text-xs font-medium text-zinc-300 hover:text-white transition-colors"
                   >
                     <Sliders className="w-3.5 h-3.5" />
                     <span>3D & Controls</span>
@@ -632,7 +729,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                       setMobileMenuOpen(false);
                       onToggleTheme();
                     }}
-                    className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-xl bg-zinc-900 border border-white/10 text-xs text-zinc-300 hover:text-white"
+                    className="flex-1 flex items-center justify-center gap-2 py-2.5 rounded-2xl bg-white/[0.06] border border-white/15 text-xs font-medium text-zinc-300 hover:text-white transition-colors"
                   >
                     {theme === 'dark' ? (
                       <Sun className="w-3.5 h-3.5 text-white" />
