@@ -1,0 +1,233 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #000000;
+    --bg-secondary: #0a0a0c;
+    --bg-tertiary: #121216;
+    --border-subtle: rgba(255, 255, 255, 0.14);
+    --border-strong: rgba(255, 255, 255, 0.28);
+    --text-primary: #ffffff;
+    --text-secondary: #b4b4bc;
+    --text-muted: #71717a;
+    --accent: #ffffff;
+    --accent-contrast: #000000;
+  }
+
+  html.light, body.light {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f8fa;
+    --bg-tertiary: #f0f0f3;
+    --border-subtle: rgba(0, 0, 0, 0.1);
+    --border-strong: rgba(0, 0, 0, 0.22);
+    --text-primary: #09090b;
+    --text-secondary: #3f3f46;
+    --text-muted: #71717a;
+    --accent: #09090b;
+    --accent-contrast: #ffffff;
+  }
+
+  /* Global hide scrollbar per user request: 'delete Scrollbar in full app' */
+  * {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+  }
+  *::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+
+  html, body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Zara editorial high-fashion typography */
+  .font-zara {
+    font-family: 'Bodoni Moda', Georgia, 'Times New Roman', serif;
+    letter-spacing: -0.02em;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, Menlo, Monaco, Consolas, monospace;
+  }
+}
+
+/* Theme containers */
+.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #09090b;
+}
+
+/* Apple VisionOS / macOS Liquid Glass Styling - Dark Mode */
+.liquid-glass, .glass-panel {
+  background: rgba(10, 10, 12, 0.68);
+  backdrop-filter: blur(28px) saturate(190%);
+  -webkit-backdrop-filter: blur(28px) saturate(190%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.18),
+    0 20px 44px -14px rgba(0, 0, 0, 0.75);
+}
+
+.liquid-glass-pill, .glass-pill {
+  background: rgba(14, 14, 18, 0.78);
+  backdrop-filter: blur(32px) saturate(200%);
+  -webkit-backdrop-filter: blur(32px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.25),
+    0 20px 40px -15px rgba(0, 0, 0, 0.8);
+}
+
+/* Apple VisionOS Liquid Glass - White Mode */
+.light .liquid-glass, .light .glass-panel {
+  background: rgba(255, 255, 255, 0.78) !important;
+  backdrop-filter: blur(28px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(190%) !important;
+  border: 1px solid rgba(0, 0, 0, 0.11) !important;
+  box-shadow: 
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.95),
+    0 18px 40px -14px rgba(0, 0, 0, 0.08) !important;
+}
+
+.light .liquid-glass-pill, .light .glass-pill {
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(32px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(32px) saturate(200%) !important;
+  border: 1px solid rgba(0, 0, 0, 0.14) !important;
+  box-shadow: 
+    inset 0 1px 1px 0 rgba(255, 255, 255, 1),
+    0 20px 40px -15px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* White Mode Crisp Monochrome Color Adaptation */
+.light h1, .light h2, .light h3, .light h4 {
+  color: #09090b !important;
+}
+
+.light .text-white {
+  color: #09090b !important;
+}
+
+.light .text-zinc-200, .light .text-zinc-300 {
+  color: #27272a !important;
+}
+
+.light .text-zinc-400 {
+  color: #52525b !important;
+}
+
+.light .text-zinc-500 {
+  color: #71717a !important;
+}
+
+/* Primary inverted buttons/pills (bg-white text-black -> bg-black text-white in White Mode) */
+.light .bg-white.text-black {
+  background-color: #09090b !important;
+  color: #ffffff !important;
+}
+
+.light .bg-white.text-black span,
+.light .bg-white.text-black svg {
+  color: #ffffff !important;
+}
+
+.light .active-nav-btn,
+.light .active-nav-btn span,
+.light .active-nav-btn svg {
+  color: #ffffff !important;
+}
+
+.light .active-nav-bg {
+  background-color: #09090b !important;
+}
+
+/* Secondary dark surfaces in White Mode */
+.light .bg-zinc-900,
+.light .bg-zinc-900\/90,
+.light .bg-zinc-900\/60,
+.light .bg-zinc-950,
+.light .bg-zinc-950\/90 {
+  background-color: rgba(248, 248, 250, 0.96) !important;
+  color: #09090b !important;
+  border-color: rgba(0, 0, 0, 0.14) !important;
+}
+
+.light .bg-white\/5,
+.light .bg-white\/10,
+.light .bg-white\/15,
+.light .bg-white\/20,
+.light .bg-white\/\[0\.03\],
+.light .bg-white\/\[0\.04\] {
+  background-color: rgba(0, 0, 0, 0.045) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.light .border-white\/5,
+.light .border-white\/10,
+.light .border-white\/15,
+.light .border-white\/20,
+.light .border-white\/25,
+.light .border-white\/30,
+.light .border-white\/50 {
+  border-color: rgba(0, 0, 0, 0.14) !important;
+}
+
+.light .bg-black\/40,
+.light .bg-black\/50,
+.light .bg-black\/60,
+.light .bg-black\/70,
+.light .bg-black\/75 {
+  background-color: rgba(244, 244, 246, 0.92) !important;
+  border-color: rgba(0, 0, 0, 0.12) !important;
+  color: #09090b !important;
+}
+
+/* Progress bars in White Mode */
+.light .h-1\.5 > .bg-white {
+  background-color: #09090b !important;
+}
+
+/* Pulse dots in White Mode */
+.light span.rounded-full.bg-white {
+  background-color: #09090b !important;
+}
+
+/* Range Sliders Pure Monochrome Contrast */
+.dark input[type="range"] {
+  accent-color: #ffffff !important;
+}
+
+.light input[type="range"] {
+  accent-color: #09090b !important;
+}
+
+/* Portrait Frame & Overlays — Preserve true-to-life photo colors and dark glass overlays in both themes */
+.portrait-glass-badge {
+  background: rgba(9, 9, 11, 0.78) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  color: #ffffff !important;
+}
+
+.light .portrait-glass-badge,
+.light .portrait-glass-badge span,
+.light .portrait-glass-badge div,
+.light .portrait-glass-badge svg {
+  color: #ffffff !important;
+}
+
+.light .portrait-glass-badge .portrait-pill-tag {
+  background-color: #ffffff !important;
+  color: #09090b !important;
+}
+
+
