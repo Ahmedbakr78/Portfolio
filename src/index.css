@@ -203,14 +203,37 @@ input[type="range"]::-webkit-slider-thumb:hover {
   color: #ffffff !important;
 }
 
-.light .active-nav-btn,
-.light .active-nav-btn span,
+/* Active Navigation Pill across Dark & Light Modes */
+.active-nav-btn {
+  position: relative !important;
+  isolation: isolate !important;
+  color: #09090b !important;
+}
+
+.active-nav-btn span:not(.active-nav-bg),
+.active-nav-btn svg {
+  color: #09090b !important;
+}
+
+.active-nav-bg {
+  background-color: #ffffff !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+}
+
+.light .active-nav-btn {
+  color: #ffffff !important;
+}
+
+.light .active-nav-btn span:not(.active-nav-bg),
 .light .active-nav-btn svg {
   color: #ffffff !important;
 }
 
 .light .active-nav-bg {
   background-color: #09090b !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
 }
 
 /* Secondary dark surfaces in White Mode */

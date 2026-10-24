@@ -133,20 +133,20 @@ export const BottomDock: React.FC<BottomDockProps> = ({
               onMouseLeave={() => setHoveredItem(null)}
               onClick={() => scrollTo(item.id)}
               aria-label={`Jump to ${item.label}`}
-              className={`${item.mobileHidden ? 'hidden md:flex' : 'flex'} relative p-1.5 sm:px-3 sm:py-1.5 rounded-full transition-colors items-center gap-1.5 text-xs font-medium shrink-0 cursor-pointer ${
+              className={`${item.mobileHidden ? 'hidden md:flex' : 'flex'} relative isolate p-1.5 sm:px-3 sm:py-1.5 rounded-full transition-colors items-center gap-1.5 text-xs font-medium shrink-0 cursor-pointer ${
                 isActive
-                  ? 'active-nav-btn text-black font-semibold'
-                  : 'hover:bg-white/10 text-zinc-300 hover:text-white'
+                  ? 'active-nav-btn font-semibold'
+                  : 'hover:bg-black/5 text-zinc-600 hover:text-black dark:hover:bg-white/10 dark:text-zinc-300 dark:hover:text-white'
               }`}
             >
               {isActive && (
                 <motion.span
                   layoutId="bottom-dock-active-pill"
                   transition={{ type: 'spring', stiffness: 420, damping: 32 }}
-                  className="active-nav-bg absolute inset-0 rounded-full bg-white shadow-sm -z-10"
+                  className="active-nav-bg absolute inset-0 rounded-full shadow-sm z-0 pointer-events-none"
                 />
               )}
-              <Icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+              <Icon className="relative z-10 w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
               <AnimatePresence initial={false}>
                 {showText && (
                   <motion.span
@@ -154,7 +154,7 @@ export const BottomDock: React.FC<BottomDockProps> = ({
                     animate={{ opacity: 1, width: 'auto' }}
                     exit={{ opacity: 0, width: 0 }}
                     transition={{ duration: 0.2 }}
-                    className="hidden md:inline-block overflow-hidden whitespace-nowrap"
+                    className="relative z-10 hidden md:inline-block overflow-hidden whitespace-nowrap"
                   >
                     {item.label}
                   </motion.span>

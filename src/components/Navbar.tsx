@@ -203,20 +203,20 @@ export const Navbar: React.FC<NavbarProps> = ({
                   onMouseLeave={() => setHoveredNav(null)}
                   onClick={() => handleNavClick(item.id)}
                   aria-label={item.label}
-                  className={`relative px-2 2xl:px-2.5 py-1.5 rounded-full text-[11px] 2xl:text-xs font-medium transition-colors duration-200 flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${
+                  className={`relative isolate px-2 2xl:px-2.5 py-1.5 rounded-full text-[11px] 2xl:text-xs font-medium transition-colors duration-200 flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${
                     isActive
-                      ? 'active-nav-btn text-black font-semibold'
-                      : 'text-zinc-300 hover:text-white hover:bg-white/5'
+                      ? 'active-nav-btn font-semibold'
+                      : 'text-zinc-600 hover:text-black hover:bg-black/5 dark:text-zinc-300 dark:hover:text-white dark:hover:bg-white/5'
                   }`}
                 >
                   {isActive && (
                     <motion.span
                       layoutId="navbar-active-pill"
                       transition={{ type: 'spring', stiffness: 420, damping: 32 }}
-                      className="active-nav-bg absolute inset-0 rounded-full bg-white shadow-md -z-10"
+                      className="active-nav-bg absolute inset-0 rounded-full shadow-md z-0 pointer-events-none"
                     />
                   )}
-                  {showIcon && <Icon className="w-3.5 h-3.5 shrink-0" />}
+                  {showIcon && <Icon className="relative z-10 w-3.5 h-3.5 shrink-0" />}
                   <AnimatePresence initial={false}>
                     {showText && (
                       <motion.span
@@ -224,7 +224,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                         animate={{ opacity: 1, width: 'auto' }}
                         exit={{ opacity: 0, width: 0 }}
                         transition={{ duration: 0.2, ease: 'easeOut' }}
-                        className="overflow-hidden whitespace-nowrap inline-block"
+                        className="relative z-10 overflow-hidden whitespace-nowrap inline-block"
                       >
                         {item.label}
                       </motion.span>
