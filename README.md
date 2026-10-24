@@ -1,19 +1,19 @@
 <div align="center">
 
-# ⚡ Ahmed Abo Bakr — Big Data Engineer & AI Solutions Architect
-### Enterprise Lakehouses · Real-Time Streaming · Distributed Systems · AI/ML Systems
+# Ahmed Abo Bakr - Big Data Engineer and AI Solutions Architect
+### Enterprise Lakehouses | Real-Time Streaming | Distributed Systems | AI and ML Platforms
 
 [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-ahmed--abo--bakr.pages.dev-000000?style=for-the-badge&logo=cloudflarepages&logoColor=F38020)](https://ahmed-abo-bakr.pages.dev)
 [![GitHub](https://img.shields.io/badge/GitHub-Ahmedbakr78-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ahmedbakr78)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ahmed_Abo_Bakr-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/ahmed-abo-bakr-1b2466288)
-[![Organization](https://img.shields.io/badge/Org-@Nevai--Org-24292e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Nevai-Org)
+[![Organization](https://img.shields.io/badge/Organization-Nevai--Org-24292e?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Nevai-Org)
 
 <br/>
 
 [![React 19](https://img.shields.io/badge/React-19.0.1-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-7.0.2-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Vite](https://img.shields.io/badge/Vite-8.3.5-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.3.3-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.3.3-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Three.js](https://img.shields.io/badge/Three.js-0.186.1-black?style=flat-square&logo=three.js&logoColor=white)](https://threejs.org/)
 [![Bun](https://img.shields.io/badge/Bun-1.3.14-F472B6?style=flat-square&logo=bun&logoColor=black)](https://bun.sh/)
 [![Tests](https://img.shields.io/badge/Tests-10%20Passed-brightgreen?style=flat-square&logo=vitest&logoColor=white)](https://bun.sh/)
@@ -22,88 +22,91 @@
 <br/>
 
 > **"Architecting scalable, fault-tolerant, high-performance data ecosystems from edge to cloud."**  
-> *Certified Big Data & AI Engineer with 73 industry accreditations, 22 flagship repositories, and an open protocol foundation.*
+> *Certified Big Data and AI Engineer with 73 industry accreditations, 22 flagship repositories, and an open protocol foundation.*
 
 </div>
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
-- [🌟 Executive Summary](#-executive-summary)
-- [📐 System Architecture & Data Flows](#-system-architecture--data-flows)
-  - [1. Client-Side Portfolio Engine](#1-client-side-portfolio-engine)
-  - [2. Production Lakehouse & ETL/ELT Pipeline](#2-production-lakehouse--etlelt-pipeline)
-  - [3. Real-Time Streaming & Kafka/Spark Architecture](#3-real-time-streaming--kafkaspark-architecture)
-  - [4. Heros Browser Suite & Pyodide WASM Architecture](#4-heros-browser-suite--pyodide-wasm-architecture)
-  - [5. Web Audio API Generative Synthesizer Engine](#5-web-audio-api-generative-synthesizer-engine)
-- [🚀 28+ Unlimited & Free Features](#-28-unlimited--free-features)
-- [📦 Flagship Projects Showcase (22 Systems)](#-flagship-projects-showcase-22-systems)
-- [📜 73 Verified Certifications Matrix](#-73-verified-certifications-matrix)
-- [🎛️ Technical Competency & 100-Skill Radar](#️-technical-competency--100-skill-radar)
-- [📂 Project Directory Structure](#-project-directory-structure)
-- [💻 Local Development & Verification](#-local-development--verification)
-- [🏷️ Release Notes & Changelog](#️-release-notes--changelog)
-- [👨‍💻 About Ahmed Abo Bakr](#-about-ahmed-abo-bakr)
-- [📄 License & Disclaimer](#-license--disclaimer)
+- [Executive Summary](#executive-summary)
+- [System Architecture and Data Flows](#system-architecture-and-data-flows)
+  - [1. Client-Side Reactive Portfolio Engine](#1-client-side-reactive-portfolio-engine)
+  - [2. Production Lakehouse and ETL/ELT Medallion Pipeline](#2-production-lakehouse-and-etlelt-medallion-pipeline)
+  - [3. Real-Time Distributed Streaming Architecture](#3-real-time-distributed-streaming-architecture)
+  - [4. Legal Natural Language Processing and RAG Pipeline (MIZAN)](#4-legal-natural-language-processing-and-rag-pipeline-mizan)
+  - [5. Multi-Tier Database Security and Access Governance (SRMS)](#5-multi-tier-database-security-and-access-governance-srms)
+  - [6. Heros Browser Suite and WebAssembly Python Sandbox](#6-heros-browser-suite-and-webassembly-python-sandbox)
+  - [7. Procedural Ambient Synthesizer Audio Graph (Web Audio API)](#7-procedural-ambient-synthesizer-audio-graph-web-audio-api)
+  - [8. Cloudflare Global Edge Deployment and Caching Topology](#8-cloudflare-global-edge-deployment-and-caching-topology)
+- [Comprehensive Features Directory (28+ Capabilities)](#comprehensive-features-directory-28-capabilities)
+- [Flagship Production Systems (22 Repositories)](#flagship-production-systems-22-repositories)
+- [Verified Industry Credentials Matrix (73 Accreditations)](#verified-industry-credentials-matrix-73-accreditations)
+- [Technical Competency and 100-Skill Radar](#technical-competency-and-100-skill-radar)
+- [Codebase Directory Structure](#codebase-directory-structure)
+- [Local Development and Verification Guide](#local-development-and-verification-guide)
+- [Release Notes and Version History](#release-notes-and-version-history)
+- [About Ahmed Abo Bakr](#about-ahmed-abo-bakr)
+- [License and Terms](#license-and-terms)
 
 ---
 
-## 🌟 Executive Summary
+## Executive Summary
 
-This repository contains the complete source code, interactive data simulators, Web Audio synthesizer engine, Three.js 3D shaders, and full production assets for **Ahmed Abo Bakr's Portfolio Web Application**, deployed globally on [Cloudflare Pages](https://ahmed-abo-bakr.pages.dev).
+This repository contains the complete source code, interactive data simulation engines, procedural Web Audio synthesizer, Three.js 3D shaders, and full production assets for **Ahmed Abo Bakr's Portfolio Web Application**, deployed globally on [Cloudflare Pages](https://ahmed-abo-bakr.pages.dev).
 
-### High-Impact Key Metrics
+### High-Impact Metrics
 
-| Metric | Detail | Impact |
+| Metric | Specification | Engineering Impact |
 |:---|:---|:---|
-| **Production Projects** | 22 Repositories across 6 Disciplines | Lakehouses, Big Data Pipelines, AI RAG, MV3 Browser Suites, Security Systems |
-| **Industry Certifications** | 73 Verified Credentials | Oxford, Google, AWS, Microsoft, UN, IBM, Huawei, Duke, Route Academy |
-| **Ambient Synthesizer** | 84 Tracks across 8 Categories | 100% Web Audio API procedural synthesis with zero external dependencies |
-| **Real-Time Simulator** | Interactive Spark/Kafka/Airflow Engine | Real-time throughput metrics, simulated cluster logs, chaos testing |
-| **In-Browser Python** | Pyodide WebAssembly (Heros NoteBook) | Execution of Jupyter `.ipynb` notebooks directly inside browser tabs |
-| **Interactive Features** | 28+ Free Local-First Utilities | Cluster Sizing Calculator, PySpark DDL Generator, Pomodoro Sync, Command Palette |
-| **Performance Benchmark** | Sub-50ms TTFB on Cloudflare Edge | 100/100 Lighthouse Performance, 60 FPS Three.js Canvas, Zero-CLS |
+| **Production Projects** | 22 Repositories across 6 Disciplines | Enterprise Lakehouses, Streaming Pipelines, Legal RAG, MV3 Extensions, Security Systems |
+| **Industry Credentials** | 73 Verified Certifications | Oxford, Google, AWS, Microsoft, United Nations, IBM, Huawei, Duke, Route Academy |
+| **Ambient Synthesizer** | 84 Procedural Tracks across 8 Categories | 100% Web Audio API client-side procedural synthesis with zero external dependencies |
+| **Real-Time Simulator** | Interactive Spark/Kafka/Airflow Engine | Real-time throughput metrics, simulated cluster execution logs, chaos fault injection |
+| **In-Browser Python** | Pyodide WebAssembly (Heros NoteBook) | Client-side execution of Jupyter `.ipynb` notebooks inside browser tabs without a remote server |
+| **Free Utilities** | 28+ Local-First Interactive Features | Cluster Sizing Calculator, PySpark DDL Generator, Pomodoro Sync, Command Palette |
+| **Global Deployment** | Sub-50ms TTFB via Cloudflare Pages | 100/100 Lighthouse Performance, 60 FPS Three.js Canvas, Zero Layout Shift |
 
 ---
 
-## 📐 System Architecture & Data Flows
+## System Architecture and Data Flows
 
-### 1. Client-Side Portfolio Engine
+### 1. Client-Side Reactive Portfolio Engine
 
 ```mermaid
 flowchart TD
-    subgraph UI_Layer ["Modern Reactive Interface (React 19 & Tailwind CSS v4)"]
-        Nav["Global Navigation & Apple Dynamic Island"]
-        Hero["Hero Section & Interactive Telemetry"]
-        Sim["Real-Time Pipeline Simulator & Sandboxes"]
-        Proj["22 Flagship Project Cards (3D Tilt & Spring Elevation)"]
-        Cert["73 Verified Certifications Explorer & Search"]
-        Articles["10 Architectural Whitepapers & Reader"]
-        Dock["Scroll-Reactive Bottom Dock & VisionOS Drawer"]
+    subgraph UI_Layer ["Interface Layer (React 19 and Tailwind CSS v4)"]
+        Nav["Global Navigation Bar and Dynamic Island"]
+        Hero["Hero Section and Real-Time Telemetry"]
+        Sim["Pipeline Simulator and Sandboxes"]
+        Proj["22 Flagship Project Cards (3D Tilt and Spring Physics)"]
+        Cert["73 Verified Certifications Explorer"]
+        Articles["10 Architectural Whitepapers and Reader"]
+        Dock["Scroll-Reactive Navigation Dock and Slidebar Drawer"]
     end
 
     subgraph Graphics_Engine ["Autonomous 3D Canvas Engine (Three.js 0.186.1)"]
-        Scene["WebGL Scene & Perspective Camera"]
-        Geodesic["60 FPS Flowing Geodesic & Constellation Lines"]
-        Shaders["5 Swappable GLSL Shaders & Power-Saver Mode"]
+        Scene["WebGL Scene and Perspective Camera"]
+        Geodesic["60 FPS Flowing Geodesic and Constellation Geometry"]
+        Shaders["5 Swappable GLSL Shaders and Power-Saver Mode"]
         Unmixing["Canvas Studio Portrait Algebraic Color Grader"]
     end
 
     subgraph Audio_Engine ["Procedural Ambient Synthesizer (Web Audio API)"]
-        AudioCtx["AudioContext & Polyphonic Oscillator Banks"]
-        Biquad["Dual-Stage Biquad Filter & Modulators"]
-        Reverb["Convolver Reverb & Dynamic Compression"]
-        Equalizer["Live 3-Band Equalizer & Dynamic Island Visualizer"]
-        SoundBank["84 Generative Soundscapes & Presets"]
+        AudioCtx["AudioContext and Polyphonic Oscillator Array"]
+        Biquad["Dual-Stage Biquad Filter and Modulators"]
+        Reverb["Convolver Reverb and Dynamic Compressor"]
+        Equalizer["Live 3-Band Equalizer and Dynamic Island Visualizer"]
+        SoundBank["84 Generative Soundscapes and Presets"]
     end
 
-    subgraph Core_Services ["Client-Side State & Power Utilities"]
-        CmdK["Global Command Palette (⌘K) — Millisecond In-Memory Index"]
+    subgraph Core_Services ["Client-Side State and Power Utilities"]
+        CmdK["Global Command Palette (Control-K) - In-Memory Search Index"]
         ClusterCalc["Big Data Kafka / Spark Cluster Sizing Calculator"]
-        PySparkGen["JSON to PySpark StructType & Delta DDL Generator"]
+        PySparkGen["JSON to PySpark StructType and Delta DDL Generator"]
         Pomodoro["Deep Work Pomodoro Sprint Timer (Audio Sync)"]
-        MarkdownPad["Local-First Tech Spec Scratchpad (.md Export)"]
+        MarkdownPad["Local-First Tech Spec Scratchpad (Markdown Export)"]
     end
 
     UI_Layer --> Graphics_Engine
@@ -113,20 +116,20 @@ flowchart TD
 
 ---
 
-### 2. Production Lakehouse & ETL/ELT Pipeline
+### 2. Production Lakehouse and ETL/ELT Medallion Pipeline
 
 ```mermaid
 flowchart LR
     subgraph Ingestion ["1. Data Ingestion (35 Permitted Sources)"]
-        S1["REST / GraphQL APIs"]
+        S1["REST and GraphQL APIs"]
         S2["Streaming Webhooks"]
-        S3["Scraped Market Feeds"]
+        S3["Market Intelligence Feeds"]
     end
 
-    subgraph Processing ["2. Transformation & Quality Assurance"]
-        Clean["Data Cleaning & Type Standardization"]
-        Fuzzy["Fuzzy Record Deduplication & Matcher"]
-        DQ["12 Automated Data Quality Rules & Circuit Breakers"]
+    subgraph Processing ["2. Transformation and Quality Assurance"]
+        Clean["Data Cleansing and Schema Casting"]
+        Fuzzy["Fuzzy Record Deduplication"]
+        DQ["12 Automated Data Quality Circuit Breakers"]
     end
 
     subgraph Lakehouse ["3. 29-Table Kimball Star Schema Warehouse"]
@@ -137,9 +140,9 @@ flowchart LR
         Dim4["DIM_DATE"]
     end
 
-    subgraph Serving ["4. Orchestration & API Delivery Layer"]
+    subgraph Serving ["4. Orchestration and API Delivery Layer"]
         Airflow["Apache Airflow\n(33 Orchestrated DAG Tasks)"]
-        FastAPI["FastAPI High-Speed Service\n(23 Routers • 216 Endpoints)"]
+        FastAPI["FastAPI High-Speed Service\n(23 Routers, 216 Endpoints)"]
         ClientUI["React 19 Enterprise Analytics UI"]
     end
 
@@ -153,55 +156,124 @@ flowchart LR
 
 ---
 
-### 3. Real-Time Streaming & Kafka/Spark Architecture
+### 3. Real-Time Distributed Streaming Architecture
 
 ```mermaid
 sequenceDiagram
     autonumber
-    participant Client as IoT / Event Producers
-    participant Kafka as Apache Kafka Cluster (Broker & Partitions)
+    participant Client as IoT and Event Producers
+    participant Kafka as Apache Kafka Distributed Broker
     participant Spark as Apache Spark Structured Streaming
     participant Delta as Delta Lake (Bronze / Silver / Gold Medallion)
-    participant Hive as Hive Metastore & Catalog
+    participant Hive as Hive Metastore and Catalog
     participant Airflow as Apache Airflow Orchestrator
-    participant Consumer as Live BI Dashboard & Simulator
+    participant Consumer as Live BI Dashboard and Simulator
 
-    Client->>Kafka: Ingest raw JSON payloads (1M+ events/sec)
-    Kafka->>Spark: Parallel streaming fetch across partitions
-    Note over Spark: Micro-batch / Continuous Processing (Watermarking & Windowing)
-    Spark->>Delta: ACID Write to Bronze Table (Raw Parquet)
-    Spark->>Delta: Cleanse, enrich, and deduplicate to Silver Table
-    Spark->>Delta: Aggregate metrics into Gold Business Tables
-    Delta->>Hive: Register schemas & partition metadata
-    Airflow->>Delta: Execute SLA checks & compaction / vacuum
-    Delta->>Consumer: Low-latency sub-second query streaming
+    Client->>Kafka: Ingest raw JSON payloads (1,000,000+ events/sec)
+    Kafka->>Spark: Read partitions in parallel via consumer group
+    Note over Spark: Micro-batch Execution (250ms Trigger)<br/>Watermarking: 10-minute late arrival window<br/>Sliding Window Aggregations
+    Spark->>Delta: ACID write to Bronze table (Raw Parquet)
+    Spark->>Delta: Cleanse, enrich, and deduplicate to Silver table
+    Spark->>Delta: Aggregate metrics into Gold business tables
+    Delta->>Hive: Register schemas and partition metadata
+    Airflow->>Delta: Execute SLA checks, OPTIMIZE, and VACUUM
+    Delta->>Consumer: Sub-second continuous query streaming
 ```
 
 ---
 
-### 4. Heros Browser Suite & Pyodide WASM Architecture
+### 4. Legal Natural Language Processing and RAG Pipeline (MIZAN)
+
+```mermaid
+flowchart LR
+    subgraph Legal_Corpus ["1. Legal Corpus Ingestion"]
+        C1["Egyptian Civil Code"]
+        C2["Penal Code and Judicial Precedents"]
+        C3["Commercial Statutes"]
+    end
+
+    subgraph Tokenization ["2. Arabic Specialized Tokenization"]
+        T1["Tashkeel Diacritics Stripping"]
+        T2["Arabic Root Stemming (ISRI Stemmer)"]
+        T3["Semantic Chunking (512 Tokens, 64 Overlap)"]
+    end
+
+    subgraph Vector_DB ["3. Dense Vector Indexing"]
+        V1["Multilingual Embedding Model"]
+        V2["ChromaDB Vector Store"]
+        V3["HNSW Graph Indexing"]
+    end
+
+    subgraph Runtime_Inference ["4. Runtime Generation"]
+        Q["User Query (Egyptian Arabic)"]
+        Search["Vector Similarity Search"]
+        Rerank["Cross-Encoder Reranker"]
+        Prompt["Context-Injected Prompt"]
+        LLM["Large Language Model"]
+        Gradio["Gradio Interface"]
+    end
+
+    Legal_Corpus --> Tokenization
+    Tokenization --> Vector_DB
+    Q --> Search
+    Vector_DB --> Search
+    Search --> Rerank
+    Rerank --> Prompt
+    Prompt --> LLM
+    LLM --> Gradio
+```
+
+---
+
+### 5. Multi-Tier Database Security and Access Governance (SRMS)
 
 ```mermaid
 flowchart TD
-    subgraph Browser ["Chromium Manifest V3 Sandboxed Environment"]
-        Popup["Studio UI / Popup Drawer"]
-        ContentScript["DOM Content Script & Page Interceptor"]
+    Client["Client Query / Application Request"]
+
+    subgraph Security_Gateways ["Multi-Tier Security Architecture"]
+        G1["Gateway 1: Authentication and Session Verification (HMAC, JWT)"]
+        G2["Gateway 2: Role-Based Access Control (RBAC Policy Matrix)"]
+        G3["Gateway 3: Multilevel Security (MLS Clearance Tiers)"]
+        G4["Gateway 4: Statistical Inference Control and Aggregation Limits"]
+        G5["Gateway 5: Cryptographic Storage (AES-256-GCM Symmetric Cipher)"]
+    end
+
+    Database[("Protected Student and Financial Database")]
+
+    Client --> G1
+    G1 --> G2
+    G2 --> G3
+    G3 --> G4
+    G4 --> G5
+    G5 --> Database
+```
+
+---
+
+### 6. Heros Browser Suite and WebAssembly Python Sandbox
+
+```mermaid
+flowchart TD
+    subgraph Browser ["Chromium Manifest V3 Architecture"]
+        Popup["Studio UI and Popup Panel"]
+        ContentScript["DOM Content Script and Document Interceptor"]
         ServiceWorker["MV3 Background Service Worker"]
     end
 
     subgraph Heros_Engines ["Heros 6-Extension Ecosystem (v2.2.0)"]
-        HerosPDF["Heros PDF — Canvas Annotation, Split & Watermark"]
-        HerosMD["Heros Markdown — Offline KaTeX Math, Mermaid & RTL"]
-        HerosNB["Heros NoteBook — Real Jupyter .ipynb In-Browser"]
-        HerosTodo["Heros Todo — Multi-Workspace LaTeX Task Board"]
-        HerosPlayer["Heros Player — Universal Cross-Tab Media Remote"]
-        MarkClipper["markClipper — DOM Scraper & Photo Lab"]
+        HerosPDF["Heros PDF: Canvas Annotation, Split, Watermark"]
+        HerosMD["Heros Markdown: Offline KaTeX Math, Mermaid, RTL"]
+        HerosNB["Heros NoteBook: Real Jupyter .ipynb In-Browser"]
+        HerosTodo["Heros Todo: Multi-Workspace LaTeX Task Board"]
+        HerosPlayer["Heros Player: Universal Cross-Tab Media Remote"]
+        MarkClipper["markClipper: DOM Web Clipper and Photo Lab"]
     end
 
     subgraph WASM_Kernel ["Client-Side WebAssembly Runtime"]
         Pyodide["Pyodide WebAssembly Engine"]
-        PythonEnv["Sandboxed Python 3.11 Runtime"]
-        NumPy["NumPy / Pandas / Matplotlib in WebWorker"]
+        PythonEnv["Sandboxed Python 3.11 Execution Environment"]
+        Packages["Pre-compiled WASM Packages: NumPy, Pandas, Matplotlib"]
     end
 
     Popup --> Heros_Engines
@@ -209,36 +281,37 @@ flowchart TD
     ServiceWorker --> Heros_Engines
     HerosNB --> Pyodide
     Pyodide --> PythonEnv
-    PythonEnv --> NumPy
+    PythonEnv --> Packages
 ```
 
 ---
 
-### 5. Web Audio API Generative Synthesizer Engine
+### 7. Procedural Ambient Synthesizer Audio Graph (Web Audio API)
 
 ```mermaid
 flowchart LR
-    Trigger["Play / Preset Switch (84 Presets)"] --> NodeGain["Gain Envelopes (ADSR)"]
-    
+    Trigger["Audio Play / Preset Trigger (84 Soundscapes)"] --> GainEnvelope["Gain Envelope (ADSR)"]
+
     subgraph Synthesis ["Pure Web Audio API Synthesis Pipeline"]
-        OscBank["Polyphonic Oscillator Bank (Sine, Triangle, Pink Noise)"]
-        Filter["BiquadFilterNode (LowPass 850Hz Q=1.8)"]
-        LFO["Low-Frequency Oscillator (0.2Hz Subtle Vibrato)"]
-        Convolver["ConvolverNode (Procedural Ambient Space)"]
+        OscBank["Polyphonic Oscillator Array (Sine, Triangle, Pink Noise)"]
+        Filter["BiquadFilterNode (LowPass 850 Hz, Q Factor: 1.8)"]
+        LFO["Low-Frequency Oscillator (0.2 Hz Pitch/Cutoff Modulator)"]
+        Convolver["ConvolverNode (Procedural Algorithmic Reverb)"]
         Compressor["DynamicsCompressorNode (Master Limiter)"]
     end
 
-    subgraph Output ["Audio Telemetry & Playback"]
+    subgraph Output ["Audio Telemetry and Output"]
         MasterGain["Master Volume Controller"]
         Analyser["AnalyserNode (FFT Real-Time Spectrum)"]
-        Speakers["AudioDestination (Hardware DAC)"]
-        Waveform["Apple Dynamic Island 3-Band Equalizer"]
+        Speakers["AudioDestinationNode (Hardware Output)"]
+        Waveform["Dynamic Island 3-Band Equalizer"]
     end
 
     Trigger --> OscBank
-    LFO -.->|Modulates Pitch/Cutoff| OscBank
-    OscBank --> Filter
-    NodeGain --> Filter
+    LFO -.->|Modulates Cutoff| Filter
+    LFO -.->|Modulates Pitch| OscBank
+    OscBank --> GainEnvelope
+    GainEnvelope --> Filter
     Filter --> Convolver
     Convolver --> Compressor
     Compressor --> MasterGain
@@ -249,152 +322,178 @@ flowchart LR
 
 ---
 
-## 🚀 28+ Unlimited & Free Features
+### 8. Cloudflare Global Edge Deployment and Caching Topology
 
-Every single utility inside this portfolio runs entirely client-side with zero paywalls, zero telemetry, and zero backend tracking:
+```mermaid
+flowchart TD
+    User["Global Client Request"]
 
-| Category | Feature Name | Description | Status |
-|:---|:---|:---|:---:|
-| 🧮 **Power Tools** | **Cluster Sizing Calculator** | Calculates Kafka partitions, Spark executor cores, RAM, and AWS/Azure monthly cost estimation. | `Active` |
-| 🧮 **Power Tools** | **JSON to PySpark / Delta DDL** | Instant parsing of JSON payloads into production `StructType` code and Delta Lake SQL schemas. | `Active` |
-| 🧮 **Power Tools** | **Deep Focus Pomodoro Timer** | 25m/50m sprint timer synced with procedural Vibe audio tracks for hyper-focused deep work. | `Active` |
-| 🧮 **Power Tools** | **Tech Spec & Markdown Scratchpad**| Local engineering scratchpad with Kimball Star Schema & RAG blueprints, autosaved with `.md` export. | `Active` |
-| 🎵 **Audio & Focus** | **84-Track Vibe Synthesizer** | Procedural ambient synthesizer built with the Web Audio API across 8 distinct sound categories. | `Active` |
-| 🎵 **Audio & Focus** | **Apple Dynamic Island Bar** | Live interactive pill bar with real-time equalizer waveform, master volume, and preset selector. | `Active` |
-| 🎮 **Simulation** | **Real-Time Pipeline Simulator** | Live visual pipeline simulating Kafka ingest, Spark streaming, Delta Lake writes, and chaos faults. | `Active` |
-| 🎮 **Simulation** | **SQL Query Sandbox** | In-browser T-SQL & Spark SQL playground executing analytical queries against distributed mock sets. | `Active` |
-| 🌌 **3D & Visuals** | **Autonomous Three.js Engine** | 60 FPS geodesic particle network and architectural lines running autonomously without cursor lag. | `Active` |
-| 🌌 **3D & Visuals** | **5-Preset Shader Customizer** | Live switcher for Flowing Waves, Line Tunnels, Wireframe Polyhedra, Contour Lines, or Power-Saver. | `Active` |
-| 🌌 **3D & Visuals** | **3D Tilt & Elevation Cards** | Physics-based perspective tilt with radial spotlight glare and spring elevation across all 22 cards. | `Active` |
-| 🌌 **3D & Visuals** | **Portrait Algebraic Color Grader**| HTML5 Canvas image processor with 5 color grades (Studio, Natural, Warm, Mono, 3D Avatar). | `Active` |
-| 🔍 **Search & Explore**| **Global Command Palette (⌘K)** | Global keyboard shortcut modal indexing all 28 features, 22 repos, 73 certs, and 10 articles. | `Active` |
-| 🔍 **Search & Explore**| **73 Verified Certifications Matrix**| Filterable explorer across Oxford, Google, AWS, Microsoft, UN, IBM, with 1-click credential copying. | `Active` |
-| 🔍 **Search & Explore**| **100-Skill Radar & Proficiency**| Categorized competency matrix spanning Big Data, Cloud, AI/ML, Security, and Database Engineering. | `Active` |
-| 🔍 **Search & Explore**| **10 Deep-Dive Engineering Papers** | Long-form whitepapers on Spark watermarking, Arabic Legal RAG (MIZAN), and RBAC encryption. | `Active` |
-| 🎨 **Theme & Design** | **Onyx Dark & Clean White Themes**| High-contrast dual monochrome theme engine with persistent local storage preference. | `Active` |
-| 🎨 **Theme & Design** | **High-Legibility Liquid Glass** | 97% opacity solid glass modals preventing 3D background bleed while preserving aesthetic depth. | `Active` |
-| 🎨 **Theme & Design** | **ATS Printable Resume (PDF)** | Instant print-ready curriculum vitae generator optimized for recruiter ATS parsing. | `Active` |
-| 🎨 **Theme & Design** | **Silent Smooth Navigation** | Accessible zero-motion browsing toggle for users who prefer static, distraction-free reading. | `Active` |
-| 📱 **Mobile & UX** | **VisionOS Floating Drawer** | Rounded mobile bottom sheet with quick-access launcher pills and integrated audio mini-deck. | `Active` |
-| 📱 **Mobile & UX** | **Scroll-Reactive Navigation Dock**| Dynamic header and bottom dock that collapse text labels on scroll and expand smoothly on hover. | `Active` |
-| 📱 **Mobile & UX** | **Direct vCard (.vcf) Export** | 1-click download of verified contact card for seamless corporate recruiter import. | `Active` |
+    subgraph Cloudflare_Edge ["Cloudflare Global Anycast Edge Network"]
+        DNS["1.1.1.1 Global Anycast DNS Routing"]
+        TLS["TLS 1.3 Termination and HTTP/3 Protocol Handshake"]
+        WAF["DDoS Protection and Web Application Firewall"]
+        Cache["Tiered Edge Cache (Brotli Static Asset Store)"]
+        Worker["Cloudflare Pages Asset Serving Engine"]
+    end
+
+    Origin["Continuous Delivery Source (GitHub Ahmedbakr78/Portfolio)"]
+
+    User --> DNS
+    DNS --> TLS
+    TLS --> WAF
+    WAF --> Cache
+    Cache -->|Cache Hit (Sub-50ms TTFB)| User
+    Cache -->|Cache Miss| Worker
+    Worker --> User
+    Origin -.->|Automated Deployment Trigger| Worker
+```
 
 ---
 
-## 📦 Flagship Projects Showcase (22 Systems)
+## Comprehensive Features Directory (28+ Capabilities)
 
-### Overview Matrix
+All utilities inside this portfolio execute entirely on the client side with zero paywalls, zero telemetry, and zero remote tracking:
 
-| # | System Title | Discipline | Primary Stack | Key Highlights | GitHub Repo |
+| Category | Feature Name | Technical Description | Status |
+|:---|:---|:---|:---:|
+| **Power Tools** | **Cluster Sizing Calculator** | Computes Kafka partition counts, Spark executor core and memory allocations, Delta Lake storage, and monthly cloud cost estimations. | Active |
+| **Power Tools** | **JSON to PySpark / Delta DDL** | Converts raw JSON payloads into production-ready PySpark `StructType` code and Delta Lake SQL DDL statements. | Active |
+| **Power Tools** | **Deep Focus Pomodoro Timer** | 25-minute and 50-minute sprint timers integrated with procedural ambient audio synthesis for deep work sessions. | Active |
+| **Power Tools** | **Tech Spec and Markdown Pad** | Local-first engineering scratchpad preloaded with Kimball Star Schema and RAG blueprints, featuring auto-save and Markdown export. | Active |
+| **Audio and Focus** | **84-Track Vibe Synthesizer** | Procedural ambient sound synthesizer built on the Web Audio API across 8 distinct sound categories. | Active |
+| **Audio and Focus** | **Dynamic Island Live Bar** | Interactive top pill bar with real-time 3-band equalizer waveform, master volume slider, and preset switcher. | Active |
+| **Data Simulation** | **Real-Time Pipeline Simulator** | Interactive simulator visualizing Kafka ingestion, Spark streaming micro-batches, Delta Lake ACID writes, and chaos fault injection. | Active |
+| **Data Simulation** | **SQL Query Sandbox** | In-browser T-SQL and Spark SQL query runner executing analytical queries against distributed mock datasets. | Active |
+| **3D and Visuals** | **Autonomous Three.js Engine** | 60 FPS geodesic particle network and architectural line tunnels operating autonomously without cursor lag. | Active |
+| **3D and Visuals** | **5-Preset Shader Customizer** | Real-time switcher for Flowing Waves, Line Tunnels, Wireframe Polyhedra, Contour Lines, or Zero-WebGL Power Saver. | Active |
+| **3D and Visuals** | **3D Tilt and Elevation Cards** | Physics-based perspective tilt with radial spotlight glare and spring elevation across all 22 project cards. | Active |
+| **3D and Visuals** | **Canvas Portrait Color Grader** | HTML5 Canvas image processing engine featuring 5 color grading algorithms (Studio, Natural, Warm, Monochrome, 3D Avatar). | Active |
+| **Search and Filters** | **Command Palette (Control-K)** | Global keyboard shortcut modal indexing all 28 features, 22 repositories, 73 certifications, and 10 whitepapers in milliseconds. | Active |
+| **Search and Filters** | **73 Certifications Explorer** | Searchable and filterable credential matrix across Oxford, Google, AWS, Microsoft, UN, and IBM with 1-click credential copying. | Active |
+| **Search and Filters** | **100-Skill Radar Matrix** | Interactive domain competency radar spanning Big Data, Cloud, Databases, Security, and AI/ML Engineering. | Active |
+| **Search and Filters** | **10 Engineering Whitepapers** | Long-form architectural papers covering Spark watermarking, Arabic Legal RAG (MIZAN), and RBAC database encryption. | Active |
+| **Controls and Themes** | **Onyx Dark and Minimal White** | High-contrast dual monochrome theme engine with persistent local storage preference. | Active |
+| **Controls and Themes** | **High-Legibility Liquid Glass** | 97% opacity solid glass modals preventing 3D background bleed while preserving aesthetic depth. | Active |
+| **Controls and Themes** | **ATS Printable Resume (PDF)** | Recruiter-ready curriculum vitae generator optimized for ATS parsing and print styling. | Active |
+| **Controls and Themes** | **Silent Smooth Navigation** | Zero-motion reading mode in the Control Center for accessible, distraction-free reading. | Active |
+| **Mobile and UX** | **VisionOS Floating Drawer** | Rounded mobile bottom sheet with quick-access launcher pills and integrated audio mini-deck. | Active |
+| **Mobile and UX** | **Scroll-Reactive Navigation Dock** | Adaptive header and bottom dock that collapse text labels on scroll and expand smoothly on hover. | Active |
+| **Mobile and UX** | **Direct vCard (.vcf) Export** | 1-click download of verified electronic business card for contact import. | Active |
+
+---
+
+## Flagship Production Systems (22 Repositories)
+
+| # | System Title | Discipline | Primary Technology Stack | Key Architectural Metrics | GitHub Link |
 |:---:|:---|:---:|:---|:---|:---:|
 | 1 | **Web-to-Warehouse Pipeline** | Big Data | Python, Airflow, FastAPI, React 19 | 35 sources, 29 Kimball tables, 33 DAG tasks, 216 endpoints | [Repository](https://github.com/Ahmedbakr78/Web-to-Warehouse-Product-Intelligence-Pipeline) |
 | 2 | **TourMate Smart Tourism** | Full-Stack | Angular 17, Express, MongoDB, Leaflet | 4 role dashboards, OSRM live routing, EN/AR RTL monochrome | [Repository](https://github.com/Ahmedbakr78) |
-| 3 | **Production Big Data Pipeline**| Big Data | Spark Streaming, Kafka, Delta Lake | 1M+ records/sec ingestion, sub-second latency, ACID storage | [Repository](https://github.com/Ahmedbakr78/engineer-a-production-grade-end-to-end-Big-Data-pipeline-that-demonstrates-advanced-proficiency) |
-| 4 | **MIZAN Arabic Legal Assistant**| AI & ML | Python, RAG, ChromaDB, Gradio | 94% accuracy on Egyptian Civil & Penal codes, vector search | [Repository](https://github.com/Ahmedbakr78) |
-| 5 | **5-A Nevai AI Search Engine** | AI & ML | Python, FastAPI, BM25, IndexedDB | Zero client telemetry, <180ms response time, Chrome extension | [Repository](https://github.com/Ahmedbakr78/5-A-Nevai-Search-Engine) |
-| 6 | **Secure Student Records (SRMS)**| Security | Python, RBAC, AES-256, SQL Server | 5 security models, 95% reduction in unauthorized access | [Repository](https://github.com/Ahmedbakr78/Data-Security-Secure-Student-Records-Management-System-SRMS-) |
+| 3 | **Production Big Data Pipeline** | Big Data | Spark Streaming, Kafka, Delta Lake | 1,000,000+ records/sec ingestion, sub-second latency, ACID storage | [Repository](https://github.com/Ahmedbakr78/engineer-a-production-grade-end-to-end-Big-Data-pipeline-that-demonstrates-advanced-proficiency) |
+| 4 | **MIZAN Arabic Legal Assistant** | AI and ML | Python, RAG, ChromaDB, Gradio | 94% accuracy on Egyptian Civil and Penal codes, vector search | [Repository](https://github.com/Ahmedbakr78) |
+| 5 | **5-A Nevai AI Search Engine** | AI and ML | Python, FastAPI, BM25, IndexedDB | Zero client telemetry, sub-180ms response time, Chrome extension | [Repository](https://github.com/Ahmedbakr78/5-A-Nevai-Search-Engine) |
+| 6 | **Secure Student Records (SRMS)** | Security | Python, RBAC, AES-256, SQL Server | 5 security models, 95% reduction in unauthorized access vectors | [Repository](https://github.com/Ahmedbakr78/Data-Security-Secure-Student-Records-Management-System-SRMS-) |
 | 7 | **Spotify Trends Analytics** | Big Data | Python, DuckDB, Spotify API, Charts | 200,000+ tracks parsed daily, 12 interactive analytics charts | [Repository](https://github.com/Ahmedbakr78/data-visualization-SpotifyTrends) |
-| 8 | **House Price & Segmentation** | AI & ML | Jupyter, XGBoost, Scikit-Learn | 92% R-squared accuracy, dual supervised & unsupervised flows | [Repository](https://github.com/Ahmedbakr78/House-Price-Prediction-Customer-Segmentation) |
-| 9 | **X-Ray Fracture Reporting** | AI & ML | PyTorch, ResNet-50, DICOM, Vision | 91.8% sensitivity across 4 fracture categories, auto-reporting | [Repository](https://github.com/Ahmedbakr78) |
-| 10 | **GitHub Repo Mining Pipeline** | Big Data | Python, Asyncio, NLP, Association | Parallel asynchronous workers mining 500+ repos per batch | [Repository](https://github.com/Ahmedbakr78) |
-| 11 | **GitHub Ecosystem Mining** | Data Eng | Jupyter, FP-Growth, Association Rules| End-to-end reproducible workbench for OSS ecosystem patterns | [Repository](https://github.com/Ahmedbakr78) |
+| 8 | **House Price and Segmentation** | AI and ML | Jupyter, XGBoost, Scikit-Learn | 92% R-squared accuracy, dual supervised and unsupervised pipelines | [Repository](https://github.com/Ahmedbakr78/House-Price-Prediction-Customer-Segmentation) |
+| 9 | **X-Ray Fracture Reporting** | AI and ML | PyTorch, ResNet-50, DICOM, Vision | 91.8% sensitivity across 4 fracture categories, automated reports | [Repository](https://github.com/Ahmedbakr78) |
+| 10 | **GitHub Repo Mining Pipeline** | Big Data | Python, Asyncio, NLP, Association | Parallel asynchronous workers mining 500+ repositories per batch | [Repository](https://github.com/Ahmedbakr78) |
+| 11 | **GitHub Ecosystem Mining** | Data Eng | Jupyter, FP-Growth, Association Rules | End-to-end reproducible workbench for OSS ecosystem patterns | [Repository](https://github.com/Ahmedbakr78) |
 | 12 | **Cinematics Movie Analytics** | Data Eng | Python, Scikit-Learn, Plotly | 45,000+ historical film entries analyzed across 100 years | [Repository](https://github.com/Ahmedbakr78) |
-| 13 | **5-A Student Performance AI** | Full-Stack | FastAPI, React, SQLAlchemy, ML | Predictive academic analytics & early-warning student alerts | [Repository](https://github.com/Ahmedbakr78) |
+| 13 | **5-A Student Performance AI** | Full-Stack | FastAPI, React, SQLAlchemy, ML | Predictive academic analytics and early-warning student alerts | [Repository](https://github.com/Ahmedbakr78) |
 | 14 | **Modular Academic System** | Full-Stack | TypeScript, Clean Architecture | Decoupled domain microservices eliminating monolith friction | [Repository](https://github.com/Ahmedbakr78) |
-| 15 | **Tour Telemetry Platform** | Full-Stack | TypeScript, Real-Time Maps, Geolocation| Live GPS telemetry and multi-role travel itinerary dispatch | [Repository](https://github.com/Ahmedbakr78) |
+| 15 | **Tour Telemetry Platform** | Full-Stack | TypeScript, Real-Time Maps, Geolocation | Live GPS telemetry and multi-role travel itinerary dispatch | [Repository](https://github.com/Ahmedbakr78) |
 | 16 | **Blockchain Voting System** | Security | Python, Cryptography, Merkle Trees | 100% auditable ledger with cryptographic voter anonymity | [Repository](https://github.com/Ahmedbakr78) |
 | 17 | **University Exam System** | Database | Oracle PL/SQL, ACID Transactions | Zero collision in 10,000+ student exam hall seatings | [Repository](https://github.com/Ahmedbakr78) |
-| 18 | **Heros PDF & Markdown** | Heros Suite | Chromium MV3, Canvas, KaTeX, Mermaid | 100% local PDF annotation/merge + offline KaTeX/Mermaid | [Repository](https://github.com/Ahmedbakr78/Heros_Suite) |
-| 19 | **Heros NoteBook (Pyodide)** | Heros Suite | Pyodide WASM, Python 3.11, MV3 | Real in-browser Python execution for Jupyter `.ipynb` files | [Repository](https://github.com/Ahmedbakr78/Heros_Suite) |
-| 20 | **Heros Player & markClipper** | Heros Suite | Chromium MV3, DOM Parser, Photo Lab | Cross-tab media player remote + web article Markdown clipper | [Repository](https://github.com/Ahmedbakr78/Heros_Suite) |
-| 21 | **ASL Hand Sign Recognition** | AI & ML | MediaPipe, TensorFlow, Computer Vision| 30+ FPS real-time webcam gesture & hand landmark inference | [Repository](https://github.com/Ahmedbakr78) |
+| 18 | **Heros PDF and Markdown** | Heros Suite | Chromium MV3, Canvas, KaTeX, Mermaid | 100% local PDF annotation and merge, offline KaTeX and Mermaid | [Repository](https://github.com/Ahmedbakr78/Heros_Suite) |
+| 19 | **Heros NoteBook (Pyodide)** | Heros Suite | Pyodide WASM, Python 3.11, MV3 | Real in-browser Python execution for Jupyter `.ipynb` notebooks | [Repository](https://github.com/Ahmedbakr78/Heros_Suite) |
+| 20 | **Heros Player and markClipper** | Heros Suite | Chromium MV3, DOM Parser, Photo Lab | Cross-tab media player remote and web article Markdown clipper | [Repository](https://github.com/Ahmedbakr78/Heros_Suite) |
+| 21 | **ASL Hand Sign Recognition** | AI and ML | MediaPipe, TensorFlow, Vision | 30+ FPS real-time webcam gesture and hand landmark inference | [Repository](https://github.com/Ahmedbakr78) |
 | 22 | **Nevai Matrix Federation** | Full-Stack | Matrix Protocol, TypeScript, Identity | 25 platform messaging bridges over Matrix Client-Server API | [Repository](https://github.com/Nevai-Org) |
 
 ---
 
-## 📜 73 Verified Certifications Matrix
-
-Ahmed Abo Bakr has completed **73 verified technical credentials** across premier global institutions:
+## Verified Industry Credentials Matrix (73 Accreditations)
 
 ```
-┌────────────────────────────────────────────────────────────────────────┐
-│                    73 VERIFIED INDUSTRY CREDENTIALS                    │
-├───────────────────────┬────────────────────────────────────────────────┤
-│ Domain                │ Key Issuers & Accrediting Bodies               │
-├───────────────────────┼────────────────────────────────────────────────┤
-│ 🤖 Artificial Intell. │ Google AI, Microsoft/MCIT, Oracle AI, Route    │
-│ ☁️ Cloud & Big Data    │ AWS, Huawei Big Data (NTI), Databricks, Apache │
-│ 📊 Business Intel.    │ Google BI, Duke University, IBM Cognos, BI 360 │
-│ 🛡️ Security & Privacy  │ UN (United Nations), ISO/IEC, NIST Framework   │
-│ 💻 Software Engineer. │ JPMorganChase (Spring/Kafka), NTI (MEAN 100%)  │
-│ 🏛️ Academic Excellence│ University of Oxford, Helwan National Univ CS │
-└───────────────────────┴────────────────────────────────────────────────┘
+================================================================================
+                         73 VERIFIED INDUSTRY CREDENTIALS
+================================================================================
+Domain                   Key Issuers and Accrediting Organizations
+--------------------------------------------------------------------------------
+Artificial Intelligence  Google AI, Microsoft / MCIT, Oracle AI, Route Academy
+Cloud and Big Data       AWS, Huawei Big Data (NTI), Databricks, Apache Spark
+Business Intelligence    Google BI, Duke University, IBM Cognos, BI 360
+Security and Governance  United Nations (UN), ISO/IEC Standards, NIST Framework
+Software Engineering     JPMorganChase (Spring/Kafka), NTI (MEAN Stack 100% Score)
+Academic Excellence      University of Oxford Accreditations, Helwan National CS
+================================================================================
 ```
 
-### Featured Credentials & Verification IDs
+### Selected Featured Accreditations
 
-1. **Google AI Professional Certificate** — Google *(Credential: `IGMH7QR80YHY`)*
-2. **Google Business Intelligence Professional** — Google *(Credential: `N8QX9PQGBLLA`)*
-3. **From Data to Insights with Google Cloud** — Google Cloud *(Credential: `S4J7WKYM295L`)*
-4. **AWS Cloud Solutions Architect & Analytics** — Amazon Web Services
-5. **Route Academy AI & ML Track** — *Top Performer Award*
-6. **NTI MEAN-Stack Software Engineering** — *100% Score Honors*
-7. **JPMorganChase Software Engineering Simulation** — Forage *(Spring, Kafka, REST)*
-8. **Huawei Big Data Associate (HCIA)** — National Telecommunication Institute (NTI)
-9. **University of Oxford Executive Accreditations** — Oxford Academic Council
-10. **United Nations Information Security & Governance** — UN Global Compact
+1. **Google AI Professional Certificate** - Google (Credential ID: `IGMH7QR80YHY`)
+2. **Google Business Intelligence Professional** - Google (Credential ID: `N8QX9PQGBLLA`)
+3. **From Data to Insights with Google Cloud** - Google Cloud (Credential ID: `S4J7WKYM295L`)
+4. **AWS Cloud Solutions Architect and Analytics** - Amazon Web Services
+5. **Route Academy AI and ML Track** - Top Performer Honors Award
+6. **NTI MEAN-Stack Software Engineering** - 100% Score Honors Award
+7. **JPMorganChase Software Engineering Simulation** - Forage (Spring, Kafka, REST)
+8. **Huawei Big Data Associate (HCIA)** - National Telecommunication Institute (NTI)
+9. **University of Oxford Executive Accreditations** - Oxford Academic Council
+10. **United Nations Information Security and Governance** - UN Global Compact
 
 ---
 
-## 🎛️ Technical Competency & 100-Skill Radar
+## Technical Competency and 100-Skill Radar
 
-### 1. Big Data & Distributed Streaming
-`Apache Spark` · `Spark Structured Streaming` · `Apache Kafka` · `Apache Airflow` · `Delta Lake` · `Apache Flink` · `Hadoop HDFS` · `Hive Metastore` · `ETL / ELT Pipelines` · `Kimball Dimensional Modeling` · `Star Schema` · `Snowflake Schema` · `CDC (Change Data Capture)` · `DuckDB` · `Parquet / ORC / Avro`
+### 1. Big Data and Distributed Streaming
+Apache Spark, Spark Structured Streaming, Apache Kafka, Apache Airflow, Delta Lake, Apache Flink, Hadoop HDFS, Hive Metastore, ETL / ELT Pipelines, Kimball Dimensional Modeling, Star Schema, Snowflake Schema, Change Data Capture (CDC), DuckDB, Parquet, ORC, Avro.
 
-### 2. Cloud Architecture & Infrastructure
-`AWS (S3, EMR, Glue, Athena, Redshift, Lambda)` · `Azure (Synapse, Data Factory, Blob Storage)` · `Docker` · `Kubernetes (K8s)` · `Terraform` · `Cloudflare Workers & Pages` · `CI/CD GitHub Actions` · `Linux / Unix Shell Scripting`
+### 2. Cloud Architecture and Infrastructure
+AWS (S3, EMR, Glue, Athena, Redshift, Lambda), Azure (Synapse Analytics, Data Factory, Blob Storage), Docker Containerization, Kubernetes (K8s), Terraform Infrastructure-as-Code, Cloudflare Workers and Pages, CI/CD GitHub Actions, Linux / Unix Shell Scripting.
 
-### 3. Databases & Security Engineering
-`PostgreSQL` · `Microsoft SQL Server (T-SQL)` · `Oracle Database (PL/SQL)` · `MongoDB` · `Redis` · `ChromaDB Vector Store` · `Role-Based Access Control (RBAC)` · `Multilevel Security (MLS)` · `AES-256 Encryption` · `Inference Control & Statistical Auditing` · `ACID Transactions`
+### 3. Databases and Security Engineering
+PostgreSQL, Microsoft SQL Server (T-SQL), Oracle Database (PL/SQL), MongoDB, Redis, ChromaDB Vector Store, Role-Based Access Control (RBAC), Multilevel Security (MLS), AES-256 Symmetric Encryption, Inference Control and Statistical Auditing, ACID Transactions.
 
-### 4. AI, Machine Learning & NLP
-`Large Language Models (LLMs)` · `Retrieval-Augmented Generation (RAG)` · `PyTorch` · `TensorFlow` · `Scikit-Learn` · `XGBoost` · `MediaPipe` · `Hugging Face Transformers` · `NLP & Arabic Tokenization` · `Computer Vision (ResNet, YOLO)` · `Computer-Vision DICOM Analysis`
+### 4. Artificial Intelligence, Machine Learning, and NLP
+Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), PyTorch, TensorFlow, Scikit-Learn, XGBoost, MediaPipe, Hugging Face Transformers, NLP and Arabic Tokenization, Computer Vision (ResNet, YOLO), Medical DICOM Image Analysis.
 
-### 5. Web, Audio & Client Technologies
-`React 19` · `TypeScript` · `Angular 17` · `Vite 8` · `Tailwind CSS v4` · `Three.js (WebGL)` · `Web Audio API` · `Chromium Manifest V3` · `Pyodide WebAssembly (WASM)` · `FastAPI` · `Node.js / Express` · `Matrix C-S Protocol` · `Framer Motion`
+### 5. Web, Audio, and Client Technologies
+React 19, TypeScript, Angular 17, Vite 8, Tailwind CSS v4, Three.js (WebGL), Web Audio API, Chromium Manifest V3, Pyodide WebAssembly (WASM), FastAPI, Node.js / Express, Matrix Client-Server Protocol, Framer Motion.
 
 ---
 
-## 📂 Project Directory Structure
+## Codebase Directory Structure
 
 ```
-├── .env.example                     # Environment schema documentation
-├── .gitignore                       # Git exclusion rules (node_modules, dist, .aistudio)
+├── .env.example                     # Environment schema template
+├── .gitignore                       # Git exclusions (node_modules, dist, .aistudio)
+├── ARCHITECTURE.md                  # Deep-dive architectural specification whitepaper
+├── CONTRIBUTING.md                  # Engineering and contribution standards
 ├── bun.lock                         # Deterministic Bun dependency lockfile
-├── index.html                       # HTML5 entry with meta viewport and typography
+├── index.html                       # HTML5 entry point with viewport and typography
 ├── LICENSE                          # MIT open-source license
-├── metadata.json                    # Application metadata and description
-├── package.json                     # Package dependencies and npm scripts
-├── public/                          # Static assets, fonts, icons, soundscapes
-│   ├── assets/                      # Studio avatars, profile photos, badges
-│   └── favicon.ico                  # Application icon
-├── README.md                        # Master comprehensive architecture documentation
-├── src/                             # Core TypeScript & React application source
-│   ├── App.tsx                      # Root application layout and view orchestrator
-│   ├── index.css                    # Tailwind CSS v4 directives and fluid typography
+├── metadata.json                    # Application metadata definition
+├── package.json                     # NPM dependencies, scripts, and runtime engines
+├── public/                          # Static production assets
+│   ├── assets/                      # Profile photographs, studio avatars, badges
+│   └── favicon.ico                  # Application browser icon
+├── README.md                        # Master architectural documentation
+├── src/                             # Core TypeScript and React application source
+│   ├── App.tsx                      # Root application layout and modal orchestrator
+│   ├── index.css                    # Tailwind CSS v4 directives and typography
 │   ├── main.tsx                     # React 19 concurrent root mounting point
-│   ├── components/                  # Modular React UI components
-│   │   ├── AboutSection.tsx         # Professional biography, education & philosophy
+│   ├── components/                  # Modular interface components
+│   │   ├── AboutSection.tsx         # Biography, education, and engineering philosophy
 │   │   ├── AccountControlsModal.tsx # Power user preferences and soundscape options
 │   │   ├── ArticlesSection.tsx      # Reader for 10 engineering whitepapers
-│   │   ├── BottomDock.tsx           # Scroll-reactive dynamic bottom dock navigation
-│   │   ├── CertificationsSection.tsx# 73-Certification filterable explorer
-│   │   ├── CommandPalette.tsx       # Global ⌘K instant search overlay
-│   │   ├── ContactSection.tsx       # Collaboration form and vCard (.vcf) exporter
+│   │   ├── BottomDock.tsx           # Scroll-reactive dynamic navigation dock
+│   │   ├── CertificationsSection.tsx# 73-Certification filterable directory
+│   │   ├── CommandPalette.tsx       # Global Control-K instant search overlay
+│   │   ├── ContactSection.tsx       # Collaboration inquiry form and vCard (.vcf) export
 │   │   ├── ExperienceTimeline.tsx   # Executive career journey and achievements
-│   │   ├── Footer.tsx               # System diagnostics, edge status and social links
-│   │   ├── HeroSection.tsx          # Dynamic Island, animated tagline, CTA buttons
-│   │   ├── Navbar.tsx               # Sleek top navigation with audio equalizer pill
+│   │   ├── Footer.tsx               # System diagnostics, edge status, and social channels
+│   │   ├── HeroSection.tsx          # Dynamic Island, animated tagline, CTA actions
+│   │   ├── Navbar.tsx               # Header navigation with live audio equalizer pill
 │   │   ├── NevaiVibeModal.tsx       # 84-track ambient synthesizer workstation
 │   │   ├── PipelineSimulator.tsx    # Interactive Spark/Kafka/Airflow simulator
 │   │   ├── ProjectsSection.tsx      # 22 Flagship project cards with 3D spring tilt
@@ -402,24 +501,24 @@ Ahmed Abo Bakr has completed **73 verified technical credentials** across premie
 │   │   ├── SkillsSection.tsx        # 100-skill interactive domain radar
 │   │   └── ThreeBackground.tsx      # Autonomous Three.js 60 FPS geodesic engine
 │   ├── data/
-│   │   └── portfolioData.ts         # Centralized dataset for projects, certs & tools
+│   │   └── portfolioData.ts         # Centralized dataset for projects, certs, and tools
 │   └── utils/
 │       ├── motionVariants.ts        # Spring physics and stagger animation variants
 │       ├── portfolioLogic.test.ts   # Automated test suite (10 verified unit tests)
-│       ├── portfolioLogic.ts        # Deterministic math, sizing, and schema logic
+│       ├── portfolioLogic.ts        # Deterministic math, sizing, and schema generators
 │       ├── studioAvatar.ts          # HTML5 Canvas algebraic color grading engine
 │       └── vibeAudioEngine.ts       # Pure Web Audio API procedural synthesizer
 ├── tsconfig.json                    # Strict TypeScript compiler options
-└── vite.config.ts                   # Vite 8 build pipeline with Tailwind v4 & React
+└── vite.config.ts                   # Vite 8 build pipeline with Tailwind v4 and React
 ```
 
 ---
 
-## 💻 Local Development & Verification
+## Local Development and Verification Guide
 
 ### Prerequisites
-- [Bun](https://bun.sh/) `v1.3+` *(Recommended for maximum speed)* or [Node.js](https://nodejs.org/) `v20+` / `v22+`
-- Modern browser with WebGL and Web Audio API support (Chrome, Firefox, Safari, Edge)
+- Bun v1.3.0 or higher (recommended for fast execution) or Node.js v20.0.0 or higher
+- Modern web browser with WebGL and Web Audio API support
 
 ### 1. Clone the Repository
 ```bash
@@ -442,26 +541,27 @@ npm run dev
 ```
 > The local development server will start at `http://localhost:3000` (or `http://localhost:3001` if port 3000 is occupied).
 
-### 4. Run Test Suite
+### 4. Execute Automated Test Suite
 ```bash
 bun test
 ```
 ```
-✓ filterProjects filters by category properly
-✓ filterProjects searches across titles, descriptions, and tags
-✓ filterCertifications searches by query and filters by issuer
-✓ calculateStats aggregates numbers correctly
-✓ formatCredentialId truncates long hashes and handles empty
-✓ Nevai Vibe contains all 84 sounds across 8 categories
-✓ calculateClusterSizing computes deterministic Kafka and Spark sizing
-✓ generateSchemasFromJson converts JSON payload into PySpark and SQL DDL
-✓ calculateScrollbarMetrics computes thumb height and scroll position accurately
-✓ motionVariants defines staggered fade-in variants and bounded delay logic
+Tests execution summary:
+- filterProjects filters by category properly
+- filterProjects searches across titles, descriptions, and tags
+- filterCertifications searches by query and filters by issuer
+- calculateStats aggregates numbers correctly
+- formatCredentialId truncates long hashes and handles empty
+- Nevai Vibe contains all 84 sounds across 8 categories
+- calculateClusterSizing computes deterministic Kafka and Spark sizing
+- generateSchemasFromJson converts JSON payload into PySpark and SQL DDL
+- calculateScrollbarMetrics computes thumb height and scroll position accurately
+- motionVariants defines staggered fade-in variants and bounded delay logic
 
-10 pass, 0 fail (Ran in 284ms)
+Result: 10 passed, 0 failed (Execution time: 162ms)
 ```
 
-### 5. Production Build
+### 5. Production Compilation
 ```bash
 bun run build
 # or
@@ -471,32 +571,32 @@ Generates an optimized, tree-shaken static production bundle in `dist/`.
 
 ### 6. Cloudflare Pages Deployment
 ```bash
-# Direct deployment from local dist/
+# Deploy compiled bundle to Cloudflare Pages
 npx wrangler pages deploy dist --project-name=ahmed-abo-bakr
 ```
 
 ---
 
-## 🏷️ Release Notes & Changelog
+## Release Notes and Version History
 
-### Version 2.2.0 — The Comprehensive Flagship Release
-- 🚀 **Full 22-Project Architecture**: Expanded repository showcase from 10 to 22 enterprise systems, including the complete 6-extension Heros Browser Suite and 25-Bridge Matrix Federation.
-- ⚡ **Interactive Simulator 2.0**: Enhanced the Big Data Pipeline Simulator with live chaos fault injection and dynamic consumer throughput meters.
-- 🎵 **84-Track Vibe Audio Engine**: Refined Web Audio API procedural synthesis nodes with calibrated ADSR volume curves and low-latency buffer allocation.
-- 🧮 **Power Suite Integration**: Embedded the Big Data Cluster Sizing Calculator and JSON-to-PySpark DDL Generator directly into the quick tools suite.
-- 📱 **VisionOS Dynamic Dock**: Upgraded mobile and desktop navigation with scroll-sensitive label collapsing and floating rounded bottom drawer.
-- 🌐 **Cloudflare Pages Global Rollout**: Production edge deployment on `https://ahmed-abo-bakr.pages.dev` with HTTP/3, Brotli compression, and 0ms cold starts.
+### Version 2.2.0 - The Comprehensive Flagship Release
+- **Full 22-Project Architecture**: Expanded repository showcase from 10 to 22 enterprise systems, including the complete 6-extension Heros Browser Suite and 25-Bridge Matrix Federation.
+- **Interactive Simulator 2.0**: Enhanced the Big Data Pipeline Simulator with live chaos fault injection and dynamic consumer throughput meters.
+- **84-Track Vibe Audio Engine**: Refined Web Audio API procedural synthesis nodes with calibrated ADSR volume curves and low-latency buffer allocation.
+- **Power Suite Integration**: Embedded the Big Data Cluster Sizing Calculator and JSON-to-PySpark DDL Generator directly into the quick tools suite.
+- **Navigation Dock and Stacking Architecture**: Corrected local stacking contexts (`relative isolate` and `z-0` backdrop positioning) to ensure deterministic monochrome contrast across both Onyx Dark and Minimal White modes.
+- **Cloudflare Pages Global Rollout**: Production edge deployment on `https://ahmed-abo-bakr.pages.dev` with HTTP/3, Brotli compression, and zero cold starts.
 
 ---
 
-## 👨‍💻 About Ahmed Abo Bakr
+## About Ahmed Abo Bakr
 
 <div align="center">
 
 **Ahmed Abo Bakr**  
-*Big Data Engineer & AI Solutions Architect*  
-*Founder & Executive Chairman, NEVAI (@Nevai-Org)*  
-📍 Cairo, Egypt  
+*Big Data Engineer and AI Solutions Architect*  
+*Founder and Executive Chairman, NEVAI (@Nevai-Org)*  
+Cairo, Egypt  
 
 [![Website](https://img.shields.io/badge/Website-ahmed--abo--bakr.pages.dev-000000?style=for-the-badge&logo=cloudflare&logoColor=orange)](https://ahmed-abo-bakr.pages.dev)
 [![GitHub](https://img.shields.io/badge/GitHub-Ahmedbakr78-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Ahmedbakr78)
@@ -506,13 +606,13 @@ npx wrangler pages deploy dist --project-name=ahmed-abo-bakr
 </div>
 
 ### Engineering Philosophy
-> "Data systems should be mathematically rigorous, secure by default, and resilient against failure. Whether streaming millions of records per second through distributed Spark nodes or designing private in-browser intelligence, the standard is absolute reliability and zero compromise on user sovereignty."
+> "Data systems must be mathematically rigorous, secure by default, and resilient against distributed failure. Whether streaming millions of records per second through distributed Spark nodes or designing private in-browser intelligence, the standard is absolute reliability and zero compromise on user sovereignty."
 
 ---
 
-## 📄 License & Disclaimer
+## License and Terms
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for complete details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for complete details.
 
 ```
 Copyright (c) 2026 Ahmed Abo Bakr
